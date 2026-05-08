@@ -60,7 +60,7 @@ export default function Nav({
             <li key={href}>
               <a
                 href={href}
-                className="text-[11px] font-medium uppercase leading-none opacity-65 transition-opacity duration-200 hover:opacity-100"
+                className="text-[12px] font-medium uppercase leading-none opacity-65 transition-opacity duration-200 hover:opacity-100"
                 style={{ letterSpacing: "0.22em" }}
               >
                 {label}
@@ -77,7 +77,7 @@ export default function Nav({
             <li key={loc}>
               <a
                 href={localePaths[loc]}
-                className={`text-[11px] uppercase leading-none transition-opacity duration-200 ${
+                className={`text-[12px] uppercase leading-none transition-opacity duration-200 ${
                   loc === locale
                     ? "font-semibold opacity-100"
                     : "font-medium opacity-35 hover:opacity-70"
@@ -120,7 +120,7 @@ export default function Nav({
               <li key={href}>
                 <a
                   href={href}
-                  className="text-[11px] font-medium uppercase text-beige opacity-80 transition-opacity hover:opacity-100"
+                  className="text-[12px] font-medium uppercase text-beige opacity-80 transition-opacity hover:opacity-100"
                   style={{ letterSpacing: "0.22em" }}
                   onClick={() => setMenuOpen(false)}
                 >
@@ -138,7 +138,7 @@ export default function Nav({
               <a
                 key={loc}
                 href={localePaths[loc]}
-                className={`text-[11px] uppercase ${
+                className={`text-[12px] uppercase ${
                   loc === locale
                     ? "font-semibold text-beige opacity-100"
                     : "font-medium text-beige opacity-35 hover:opacity-70"

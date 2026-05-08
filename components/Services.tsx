@@ -9,13 +9,13 @@ export default function Services({ t }: { t: Translations["services"] }) {
       {/* Section header */}
       <div className="flex items-center justify-between gap-6 border-b border-[var(--color-hair-on-cream)] pb-7">
         <span
-          className="text-[10px] font-medium uppercase leading-none text-navy opacity-55 md:text-[11px]"
+          className="text-[11px] font-medium uppercase leading-none text-navy opacity-55 md:text-[12px]"
           style={{ letterSpacing: "0.4em" }}
         >
           {t.eyebrow}
         </span>
         <span
-          className="tabular text-[10px] font-medium uppercase leading-none text-navy opacity-40 md:text-[11px]"
+          className="tabular text-[11px] font-medium uppercase leading-none text-navy opacity-40 md:text-[12px]"
           style={{ letterSpacing: "0.22em" }}
         >
           {t.count}
@@ -72,7 +72,7 @@ export default function Services({ t }: { t: Translations["services"] }) {
                   {title}
                 </h3>
                 <p
-                  className="m-0 max-w-[460px] text-[14px] font-light leading-[1.7] text-navy opacity-70"
+                  className="m-0 max-w-[480px] text-[15px] font-light leading-[1.7] text-navy opacity-70 md:text-[16px]"
                 >
                   {description}
                 </p>

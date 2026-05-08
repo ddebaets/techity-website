@@ -43,7 +43,7 @@ export default function LegalPage({
           </Link>
           <Link
             href={homeFor(locale)}
-            className="text-[10px] font-medium uppercase leading-none text-navy/60 transition-opacity hover:opacity-100 md:text-[11px]"
+            className="text-[11px] font-medium uppercase leading-none text-navy/60 transition-opacity hover:opacity-100 md:text-[12px]"
             style={{ letterSpacing: "0.22em" }}
           >
             ← {backLabel[locale]}
@@ -54,7 +54,7 @@ export default function LegalPage({
       <main className="px-6 pb-20 pt-14 md:px-20 md:pb-32 md:pt-24">
         <article className="mx-auto max-w-[720px] text-navy">
           <p
-            className="m-0 mb-3 text-[10px] font-medium uppercase leading-none text-navy opacity-55 md:text-[11px]"
+            className="m-0 mb-3 text-[11px] font-medium uppercase leading-none text-navy opacity-55 md:text-[12px]"
             style={{ letterSpacing: "0.4em" }}
           >
             {doc.eyebrow}
@@ -73,14 +73,14 @@ export default function LegalPage({
           </h1>
 
           <p
-            className="mt-6 text-[10px] font-medium uppercase leading-none text-navy opacity-40 md:text-[11px]"
+            className="mt-6 text-[11px] font-medium uppercase leading-none text-navy opacity-40 md:text-[12px]"
             style={{ letterSpacing: "0.22em" }}
           >
             {lastUpdatedLabel[locale]} · {doc.lastUpdated}
           </p>
 
           {doc.intro && (
-            <p className="mt-10 text-[16px] font-light leading-[1.7] text-navy opacity-80 md:text-[17px]">
+            <p className="mt-10 text-[17px] font-light leading-[1.7] text-navy opacity-80 md:text-[18px]">
               {doc.intro}
             </p>
           )}
@@ -105,7 +105,7 @@ export default function LegalPage({
                 {section.paragraphs?.map((p, pi) => (
                   <p
                     key={pi}
-                    className="mb-3 text-[15px] font-light leading-[1.7] text-navy opacity-80 last:mb-0"
+                    className="mb-3 text-[16px] font-light leading-[1.7] text-navy opacity-80 last:mb-0 md:text-[17px]"
                   >
                     {p}
                   </p>
@@ -116,7 +116,7 @@ export default function LegalPage({
                     {section.list.map((item, li) => (
                       <li
                         key={li}
-                        className="list-disc text-[15px] font-light leading-[1.7] text-navy opacity-80 marker:text-navy/40"
+                        className="list-disc text-[16px] font-light leading-[1.7] text-navy opacity-80 marker:text-navy/40 md:text-[17px]"
                       >
                         {item}
                       </li>

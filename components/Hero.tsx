@@ -30,7 +30,7 @@ export default function Hero({ t }: { t: Translations["hero"] }) {
             aria-hidden
           />
           <span
-            className="text-[10px] font-medium uppercase leading-none text-beige opacity-60 md:text-[11px]"
+            className="text-[11px] font-medium uppercase leading-none text-beige opacity-60 md:text-[12px]"
             style={{ letterSpacing: "0.22em" }}
           >
             {t.eyebrow}
@@ -55,13 +55,13 @@ export default function Hero({ t }: { t: Translations["hero"] }) {
         {/* Sub row — paragraph + CTA */}
         <div className="mt-9 flex flex-col items-start gap-8 md:mt-14 md:flex-row md:items-end md:justify-between md:gap-16">
           <p
-            className="m-0 max-w-[460px] text-[15px] font-light leading-[1.6] text-beige opacity-65 md:text-[17px]"
+            className="m-0 max-w-[480px] text-[16px] font-light leading-[1.6] text-beige opacity-65 md:text-[18px]"
           >
             {t.sub}
           </p>
           <a
             href="#contact"
-            className="inline-flex shrink-0 items-center justify-center rounded-full bg-beige px-9 py-3.5 text-[11px] font-semibold uppercase text-navy transition-opacity duration-200 hover:opacity-90 md:px-11"
+            className="inline-flex shrink-0 items-center justify-center rounded-full bg-beige px-9 py-3.5 text-[12px] font-semibold uppercase text-navy transition-opacity duration-200 hover:opacity-90 md:px-11"
             style={{ letterSpacing: "0.22em" }}
           >
             {t.cta}
@@ -72,13 +72,13 @@ export default function Hero({ t }: { t: Translations["hero"] }) {
       {/* Bottom ledger */}
       <div className="relative z-10 flex flex-col gap-3 border-t border-[var(--color-hair-on-navy)] px-6 py-5 md:absolute md:bottom-9 md:left-20 md:right-20 md:flex-row md:items-center md:justify-between md:border-0 md:p-0">
         <span
-          className="text-[9px] font-medium uppercase leading-none text-beige opacity-45 md:text-[11px]"
+          className="text-[10px] font-medium uppercase leading-none text-beige opacity-45 md:text-[12px]"
           style={{ letterSpacing: "0.22em" }}
         >
           {t.ledgerLocation}
         </span>
         <span
-          className="text-[9px] font-medium uppercase leading-none text-beige opacity-45 md:text-[11px]"
+          className="text-[10px] font-medium uppercase leading-none text-beige opacity-45 md:text-[12px]"
           style={{ letterSpacing: "0.22em" }}
         >
           {t.ledgerEmail}

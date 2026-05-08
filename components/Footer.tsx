@@ -51,7 +51,7 @@ export default function Footer({
               <a
                 key={href}
                 href={href}
-                className="text-[10px] font-medium uppercase leading-none text-beige opacity-50 transition-opacity hover:opacity-100 md:text-[11px]"
+                className="text-[11px] font-medium uppercase leading-none text-beige opacity-50 transition-opacity hover:opacity-100 md:text-[12px]"
                 style={{ letterSpacing: "0.22em" }}
               >
                 {label}
@@ -60,7 +60,7 @@ export default function Footer({
           </nav>
 
           <span
-            className="text-[9px] font-medium uppercase leading-none text-beige opacity-45"
+            className="text-[10px] font-medium uppercase leading-none text-beige opacity-45"
             style={{ letterSpacing: "0.22em" }}
           >
             © {new Date().getFullYear()} Techity · {t.rights}
@@ -73,7 +73,7 @@ export default function Footer({
             <Link
               key={href}
               href={href}
-              className="text-[9px] font-medium uppercase leading-none text-beige opacity-40 transition-opacity hover:opacity-80"
+              className="text-[10px] font-medium uppercase leading-none text-beige opacity-40 transition-opacity hover:opacity-80"
               style={{ letterSpacing: "0.22em" }}
             >
               {label}

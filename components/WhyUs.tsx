@@ -21,13 +21,13 @@ export default function WhyUs({ t }: { t: Translations["whyUs"] }) {
         {/* Section header */}
         <div className="flex items-center justify-between gap-6 border-b border-[var(--color-hair-on-navy)] pb-7">
           <span
-            className="text-[10px] font-medium uppercase leading-none text-beige opacity-55 md:text-[11px]"
+            className="text-[11px] font-medium uppercase leading-none text-beige opacity-55 md:text-[12px]"
             style={{ letterSpacing: "0.4em" }}
           >
             {t.eyebrow}
           </span>
           <span
-            className="tabular text-[10px] font-medium uppercase leading-none text-beige opacity-40 md:text-[11px]"
+            className="tabular text-[11px] font-medium uppercase leading-none text-beige opacity-40 md:text-[12px]"
             style={{ letterSpacing: "0.22em" }}
           >
             {t.count}
@@ -68,15 +68,15 @@ export default function WhyUs({ t }: { t: Translations["whyUs"] }) {
               <h3
                 className="m-0 mb-4 text-beige"
                 style={{
-                  fontSize: 22,
+                  fontSize: 24,
                   fontWeight: 400,
                   letterSpacing: "-0.01em",
-                  lineHeight: 1.05,
+                  lineHeight: 1.1,
                 }}
               >
                 {title}
               </h3>
-              <p className="m-0 text-[15px] font-light leading-[1.7] text-beige opacity-70">
+              <p className="m-0 text-[16px] font-light leading-[1.7] text-beige opacity-70 md:text-[17px]">
                 {body}
               </p>
             </div>

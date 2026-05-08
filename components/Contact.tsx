@@ -44,14 +44,14 @@ export default function Contact({ t }: { t: Translations["contact"] }) {
       {/* Section header */}
       <div className="flex items-center justify-between gap-6 border-b border-[var(--color-hair-on-navy)] pb-7">
         <span
-          className="text-[10px] font-medium uppercase leading-none text-beige opacity-55 md:text-[11px]"
+          className="text-[11px] font-medium uppercase leading-none text-beige opacity-55 md:text-[12px]"
           style={{ letterSpacing: "0.4em" }}
         >
           {t.eyebrow}
         </span>
         <a
           href={`mailto:${t.countEmail}`}
-          className="text-[10px] font-medium uppercase leading-none text-beige opacity-40 transition-opacity hover:opacity-100 md:text-[11px]"
+          className="text-[11px] font-medium uppercase leading-none text-beige opacity-40 transition-opacity hover:opacity-100 md:text-[12px]"
           style={{ letterSpacing: "0.22em" }}
         >
           {t.countEmail}
@@ -75,14 +75,14 @@ export default function Contact({ t }: { t: Translations["contact"] }) {
             <em className="accent">{t.heading2}</em>
           </h2>
 
-          <p className="m-0 mt-9 max-w-[420px] text-[15px] font-light leading-[1.6] text-beige opacity-65 md:text-[17px]">
+          <p className="m-0 mt-9 max-w-[440px] text-[16px] font-light leading-[1.6] text-beige opacity-65 md:text-[18px]">
             {t.body}
           </p>
 
           <div className="mt-10 flex flex-col gap-3.5 md:mt-12">
             <a
               href={`mailto:${t.email}`}
-              className="text-[12px] font-medium uppercase text-beige opacity-70 transition-opacity hover:opacity-100 md:text-[13px]"
+              className="text-[13px] font-medium uppercase text-beige opacity-70 transition-opacity hover:opacity-100 md:text-[14px]"
               style={{ letterSpacing: "0.18em" }}
             >
               {t.email}
@@ -91,7 +91,7 @@ export default function Contact({ t }: { t: Translations["contact"] }) {
               href="https://www.linkedin.com/company/techity"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[12px] font-medium uppercase text-beige opacity-70 transition-opacity hover:opacity-100 md:text-[13px]"
+              className="text-[13px] font-medium uppercase text-beige opacity-70 transition-opacity hover:opacity-100 md:text-[14px]"
               style={{ letterSpacing: "0.18em" }}
             >
               {t.linkedin}
@@ -150,7 +150,7 @@ export default function Contact({ t }: { t: Translations["contact"] }) {
                 <button
                   type="submit"
                   disabled={status === "sending"}
-                  className="rounded-full bg-beige px-11 py-4 text-[11px] font-semibold uppercase text-navy transition-opacity duration-200 hover:opacity-90 disabled:opacity-50"
+                  className="rounded-full bg-beige px-11 py-4 text-[12px] font-semibold uppercase text-navy transition-opacity duration-200 hover:opacity-90 disabled:opacity-50"
                   style={{ letterSpacing: "0.22em" }}
                 >
                   {status === "sending" ? t.sending : t.sendButton}
