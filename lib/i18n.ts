@@ -67,7 +67,7 @@ const en: Translations = {
     eyebrow: "Managed IT for small businesses",
     heading1: "IT you don’t have",
     heading2: "to think about.",
-    sub: "Simple, fully managed IT for small businesses, backed by people who take the time to understand yours before recommending anything.",
+    sub: "Simple, fully managed IT for small businesses, backed by people who take the time to understand your business before recommending anything.",
     cta: "Let’s talk",
     ledgerLocation: "50.85°N / 4.35°E · Brussels",
     ledgerEmail: "hello@techity.io",
@@ -91,7 +91,7 @@ const en: Translations = {
       {
         title: "Collaboration platforms",
         description:
-          "Tenant setup, user management, migrations and licensing across the major collaboration suites, fully managed so your team always has the right tools, without the admin overhead.",
+          "Tenant setup, user management, migrations and licensing across the major collaboration suites. Fully managed, so your team always has the right tools without the admin overhead.",
       },
       {
         title: "Modern Workplace",
@@ -106,12 +106,12 @@ const en: Translations = {
       {
         title: "Immutable Backup",
         description:
-          "Tamper-proof, automated backup for your collaboration data. Set once, monitored always, your data is safe even if the worst happens.",
+          "Tamper-proof, automated backup for your collaboration data. Set once, monitored always. Your data is safe, even if the worst happens.",
       },
       {
         title: "Support & Monitoring",
         description:
-          "Proactive monitoring catches issues before you notice them. When something does need attention, we’re fast, remote or on-site.",
+          "Proactive monitoring catches issues before you notice them. When something does need attention, we’re fast, whether remote or on-site.",
       },
       {
         title: "Smart Automation",
@@ -128,7 +128,7 @@ const en: Translations = {
     pillars: [
       {
         title: "We listen before we recommend",
-        body: "We take the time to understand your business, your team, and your actual needs, before suggesting anything. No unnecessary tools, no bloated solutions, no upselling.",
+        body: "We take the time to understand your business, your team, and your actual needs before suggesting anything. No unnecessary tools, no bloated solutions, no upselling.",
       },
       {
         title: "Truly managed, start to finish",
@@ -199,7 +199,7 @@ const fr: Translations = {
       {
         title: "Plateformes collaboratives",
         description:
-          "Configuration des tenants, gestion des utilisateurs, migrations et licences sur les principales suites collaboratives, entièrement géré pour que votre équipe dispose toujours des bons outils, sans surcharge administrative.",
+          "Configuration des tenants, gestion des utilisateurs, migrations et licences sur les principales suites collaboratives. Nous gérons tout pour que votre équipe dispose toujours des bons outils, sans surcharge administrative.",
       },
       {
         title: "Modern Workplace",
@@ -214,12 +214,12 @@ const fr: Translations = {
       {
         title: "Backup immuable",
         description:
-          "Sauvegarde automatisée et inviolable de vos données de collaboration. Configuré une fois, surveillé en permanence, vos données sont protégées même en cas d’incident.",
+          "Sauvegarde automatisée et inviolable de vos données de collaboration. Configurée une fois, surveillée en permanence. Vos données sont protégées, même en cas d’incident.",
       },
       {
         title: "Support & Monitoring",
         description:
-          "Un monitoring proactif détecte les problèmes avant que vous ne les remarquiez. Quand une intervention est nécessaire, nous intervenons rapidement, à distance ou sur site.",
+          "Un monitoring proactif détecte les problèmes avant que vous ne les remarquiez. Quand une intervention est nécessaire, nous intervenons rapidement, que ce soit à distance ou sur site.",
       },
       {
         title: "Automatisation intelligente",
@@ -236,7 +236,7 @@ const fr: Translations = {
     pillars: [
       {
         title: "Nous écoutons avant de recommander",
-        body: "Nous prenons le temps de comprendre votre entreprise, votre équipe et vos besoins réels, avant de suggérer quoi que ce soit. Pas d’outils inutiles, pas de solutions surdimensionnées.",
+        body: "Nous prenons le temps de comprendre votre entreprise, votre équipe et vos besoins réels avant de suggérer quoi que ce soit. Pas d’outils inutiles, pas de solutions surdimensionnées.",
       },
       {
         title: "Entièrement géré, du début à la fin",
@@ -244,7 +244,7 @@ const fr: Translations = {
       },
       {
         title: "La qualité sans compromis",
-        body: "Nous appliquons des standards enterprise quelle que soit la taille de votre entreprise. Être petite ne signifie pas se contenter du moins bien. Nos clients font la différence.",
+        body: "Nous appliquons les mêmes exigences de qualité quelle que soit la taille de votre entreprise. Être petit ne veut pas dire se contenter du second choix. Nos clients sentent la différence.",
       },
     ],
   },
@@ -283,7 +283,7 @@ const nl: Translations = {
     eyebrow: "Beheerde IT voor kleine bedrijven",
     heading1: "IT waar u niet aan",
     heading2: "hoeft te denken.",
-    sub: "Volledig beheerde IT voor kleine bedrijven, door mensen die de tijd nemen om uw bedrijf te begrijpen voor ze iets aanbevelen.",
+    sub: "Volledig beheerde IT voor kleine bedrijven, door mensen die de tijd nemen om uw bedrijf te begrijpen voordat ze iets aanbevelen.",
     cta: "Laten we praten",
     ledgerLocation: "50,85°N / 4,35°O · Brussel",
     ledgerEmail: "hello@techity.io",
@@ -307,7 +307,7 @@ const nl: Translations = {
       {
         title: "Samenwerkingsplatformen",
         description:
-          "Tenantinrichting, gebruikersbeheer, migraties en licenties over de belangrijkste samenwerkingssuites, volledig beheerd zodat uw team altijd over de juiste tools beschikt, zonder administratieve last.",
+          "Tenantinrichting, gebruikersbeheer, migraties en licenties voor de belangrijkste samenwerkingssuites. Volledig beheerd, zodat uw team altijd over de juiste tools beschikt, zonder administratieve last.",
       },
       {
         title: "Modern Workplace",
@@ -322,12 +322,12 @@ const nl: Translations = {
       {
         title: "Onveranderlijke back-up",
         description:
-          "Manipulatiebestendige, geautomatiseerde back-up van uw samenwerkingsgegevens. Eenmalig ingesteld, continu bewaakt, uw data is veilig, ook bij het ergste scenario.",
+          "Manipulatiebestendige, geautomatiseerde back-up van uw samenwerkingsgegevens. Eenmalig ingesteld, continu bewaakt. Uw data is veilig, ook in het ergste scenario.",
       },
       {
         title: "Support & Monitoring",
         description:
-          "Proactieve monitoring spoort problemen op voordat u ze opmerkt. Als er toch iets nodig is, zijn we snel, op afstand of ter plaatse.",
+          "Proactieve monitoring spoort problemen op voordat u ze opmerkt. Als er toch iets nodig is, zijn we er snel bij, op afstand of ter plaatse.",
       },
       {
         title: "Slimme automatisering",
@@ -344,7 +344,7 @@ const nl: Translations = {
     pillars: [
       {
         title: "Wij luisteren voor we adviseren",
-        body: "We nemen de tijd om uw bedrijf, uw team en uw werkelijke behoeften te begrijpen, voor we iets voorstellen. Geen onnodige tools, geen opgeblazen oplossingen, geen upselling.",
+        body: "We nemen de tijd om uw bedrijf, uw team en uw werkelijke behoeften te begrijpen voordat we iets voorstellen. Geen onnodige tools, geen opgeblazen oplossingen, geen upselling.",
       },
       {
         title: "Volledig beheerd, van start tot finish",
@@ -352,7 +352,7 @@ const nl: Translations = {
       },
       {
         title: "Kwaliteit zonder compromissen",
-        body: "We houden ons aan enterprise-standaarden, ongeacht de grootte van uw bedrijf. Klein zijn betekent niet genoegen nemen met minder. Onze klanten voelen het verschil.",
+        body: "We hanteren dezelfde kwaliteitsnormen als grote ondernemingen, ongeacht de grootte van uw bedrijf. Klein zijn betekent niet dat u genoegen moet nemen met minder. Onze klanten voelen het verschil.",
       },
     ],
   },
