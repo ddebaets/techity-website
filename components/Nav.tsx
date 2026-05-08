@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import type { Translations, Locale } from "@/lib/i18n";
 
 const localePaths: Record<Locale, string> = { en: "/", fr: "/fr", nl: "/nl" };
@@ -75,8 +76,9 @@ export default function Nav({
         >
           {(Object.keys(localePaths) as Locale[]).map((loc) => (
             <li key={loc}>
-              <a
+              <Link
                 href={localePaths[loc]}
+                prefetch
                 className={`text-[12px] uppercase leading-none transition-opacity duration-200 ${
                   loc === locale
                     ? "font-semibold opacity-100"
@@ -85,7 +87,7 @@ export default function Nav({
                 style={{ letterSpacing: "0.22em" }}
               >
                 {localeLabels[loc]}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -135,9 +137,11 @@ export default function Nav({
             style={{ gap: 14 }}
           >
             {(Object.keys(localePaths) as Locale[]).map((loc) => (
-              <a
+              <Link
                 key={loc}
                 href={localePaths[loc]}
+                prefetch
+                onClick={() => setMenuOpen(false)}
                 className={`text-[12px] uppercase ${
                   loc === locale
                     ? "font-semibold text-beige opacity-100"
@@ -146,7 +150,7 @@ export default function Nav({
                 style={{ letterSpacing: "0.22em" }}
               >
                 {localeLabels[loc]}
-              </a>
+              </Link>
             ))}
           </div>
         </div>

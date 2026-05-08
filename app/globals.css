@@ -16,6 +16,25 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Respect users who've asked the OS to reduce motion. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Offset anchor jumps for the fixed header so section headings don't end up
+   hidden under the nav bar. Header is 64px on mobile, 72px on desktop, plus
+   a little breathing room. */
+section[id] {
+  scroll-margin-top: 80px;
+}
+@media (min-width: 768px) {
+  section[id] {
+    scroll-margin-top: 96px;
+  }
+}
+
 body {
   font-family: var(--font-display);
   background-color: var(--color-beige);
