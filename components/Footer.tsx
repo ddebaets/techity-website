@@ -9,6 +9,7 @@ export default function Footer({
   nav: Translations["nav"];
 }) {
   const links = [
+    { href: "#top", label: nav.home },
     { href: "#services", label: nav.services },
     { href: "#why-us", label: nav.whyUs },
     { href: "#partners", label: nav.partners },

@@ -2,6 +2,7 @@ export type Locale = "en" | "fr" | "nl";
 
 export type Translations = {
   nav: {
+    home: string;
     services: string;
     whyUs: string;
     partners: string;
@@ -61,6 +62,7 @@ export type Translations = {
 
 const en: Translations = {
   nav: {
+    home: "Home",
     services: "Services",
     whyUs: "Why us",
     partners: "Partners",
@@ -172,6 +174,7 @@ const en: Translations = {
 
 const fr: Translations = {
   nav: {
+    home: "Accueil",
     services: "Services",
     whyUs: "Pourquoi nous",
     partners: "Partenaires",
@@ -283,6 +286,7 @@ const fr: Translations = {
 
 const nl: Translations = {
   nav: {
+    home: "Home",
     services: "Diensten",
     whyUs: "Waarom wij",
     partners: "Partners",
