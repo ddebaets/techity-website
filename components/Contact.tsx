@@ -34,99 +34,139 @@ export default function Contact({ t }: { t: Translations["contact"] }) {
   };
 
   const inputClass =
-    "w-full bg-transparent border border-beige/20 text-beige placeholder:text-beige/30 px-4 py-3 text-sm focus:outline-none focus:border-beige/60 transition-colors";
+    "w-full bg-transparent border-0 border-b border-[var(--color-hair-on-navy-strong)] text-beige placeholder:text-beige/40 px-0 py-4 text-[16px] font-light focus:border-beige focus:outline-none transition-colors";
 
   return (
-    <section id="contact" className="bg-navy py-28 px-6">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24">
-        <div className="flex flex-col justify-between">
-          <div>
-            <p className="text-beige/40 text-[10px] tracking-[0.4em] uppercase mb-3">
-              {t.label}
-            </p>
-            <h2 className="text-beige text-5xl md:text-6xl font-extralight mb-8 leading-tight">
-              {t.heading}
-            </h2>
-            <p className="text-beige/65 text-sm leading-relaxed max-w-xs">
-              {t.body}
-            </p>
-          </div>
+    <section
+      id="contact"
+      className="relative overflow-hidden bg-navy px-6 pb-24 pt-24 text-beige md:px-20 md:pb-40 md:pt-36"
+    >
+      {/* Section header */}
+      <div className="flex items-center justify-between gap-6 border-b border-[var(--color-hair-on-navy)] pb-7">
+        <span
+          className="text-[10px] font-medium uppercase leading-none text-beige opacity-55 md:text-[11px]"
+          style={{ letterSpacing: "0.4em" }}
+        >
+          {t.eyebrow}
+        </span>
+        <a
+          href={`mailto:${t.countEmail}`}
+          className="text-[10px] font-medium uppercase leading-none text-beige opacity-40 transition-opacity hover:opacity-100 md:text-[11px]"
+          style={{ letterSpacing: "0.22em" }}
+        >
+          {t.countEmail}
+        </a>
+      </div>
 
-          <div className="mt-12 space-y-4 text-sm">
+      <div className="mt-12 grid grid-cols-1 gap-16 md:mt-16 md:grid-cols-[1.1fr_1fr] md:gap-[120px]">
+        {/* Left — headline + meta */}
+        <div>
+          <h2
+            className="m-0 font-thin text-beige"
+            style={{
+              fontSize: "clamp(56px, 11vw, 156px)",
+              lineHeight: 0.92,
+              letterSpacing: "-0.05em",
+              fontWeight: 100,
+            }}
+          >
+            {t.heading1}
+            <br />
+            <em className="accent">{t.heading2}</em>
+          </h2>
+
+          <p className="m-0 mt-9 max-w-[420px] text-[15px] font-light leading-[1.6] text-beige opacity-65 md:text-[17px]">
+            {t.body}
+          </p>
+
+          <div className="mt-10 flex flex-col gap-3.5 md:mt-12">
             <a
-              href="mailto:hello@techity.io"
-              className="block text-beige/70 hover:text-beige transition-colors tracking-wide"
+              href={`mailto:${t.email}`}
+              className="text-[12px] font-medium uppercase text-beige opacity-70 transition-opacity hover:opacity-100 md:text-[13px]"
+              style={{ letterSpacing: "0.18em" }}
             >
-              hello@techity.io
+              {t.email}
             </a>
             <a
               href="https://www.linkedin.com/company/techity"
               target="_blank"
               rel="noopener noreferrer"
-              className="block text-beige/70 hover:text-beige transition-colors tracking-wide"
+              className="text-[12px] font-medium uppercase text-beige opacity-70 transition-opacity hover:opacity-100 md:text-[13px]"
+              style={{ letterSpacing: "0.18em" }}
             >
-              LinkedIn ↗
+              {t.linkedin}
             </a>
           </div>
         </div>
 
-        {status === "sent" ? (
-          <div className="flex items-center justify-center">
-            <div className="text-center">
-              <div className="w-12 h-px bg-beige/30 mx-auto mb-6" />
-              <p className="text-beige text-lg font-light">{t.successTitle}</p>
-              <p className="text-beige/50 text-sm mt-2">{t.successSub}</p>
+        {/* Right — form */}
+        <div className="md:pt-6">
+          {status === "sent" ? (
+            <div className="flex h-full min-h-[300px] flex-col items-start justify-center gap-3 border-t border-[var(--color-hair-on-navy-strong)] pt-12">
+              <p className="m-0 text-[20px] font-light text-beige md:text-[24px]">
+                {t.successTitle}
+              </p>
+              <p className="m-0 text-[14px] font-light text-beige opacity-60 md:text-[15px]">
+                {t.successSub}
+              </p>
               <button
                 onClick={() => setStatus("idle")}
-                className="mt-8 text-beige/40 text-xs tracking-widest uppercase hover:text-beige/80 transition-colors"
+                className="mt-4 text-[10px] font-medium uppercase text-beige opacity-50 transition-opacity hover:opacity-100"
+                style={{ letterSpacing: "0.22em" }}
               >
                 {t.sendAnother}
               </button>
             </div>
-          </div>
-        ) : (
-          <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-            <input
-              name="name"
-              type="text"
-              placeholder={t.namePlaceholder}
-              required
-              value={form.name}
-              onChange={handleChange}
-              className={inputClass}
-            />
-            <input
-              name="email"
-              type="email"
-              placeholder={t.emailPlaceholder}
-              required
-              value={form.email}
-              onChange={handleChange}
-              className={inputClass}
-            />
-            <textarea
-              name="message"
-              placeholder={t.messagePlaceholder}
-              required
-              rows={5}
-              value={form.message}
-              onChange={handleChange}
-              className={`${inputClass} resize-none`}
-            />
-            <button
-              type="submit"
-              disabled={status === "sending"}
-              className="mt-2 px-8 py-3.5 bg-beige text-navy text-xs tracking-[0.25em] uppercase hover:bg-beige/85 transition-colors disabled:opacity-50"
-            >
-              {status === "sending" ? t.sending : t.sendButton}
-            </button>
-            {status === "error" && (
-              <p className="text-red-400/80 text-xs text-center tracking-wide">
-                {t.errorMessage}
-              </p>
-            )}
-          </form>
-        )}
+          ) : (
+            <form onSubmit={handleSubmit} className="flex flex-col">
+              <input
+                name="name"
+                type="text"
+                placeholder={t.namePlaceholder}
+                required
+                value={form.name}
+                onChange={handleChange}
+                className={inputClass}
+              />
+              <input
+                name="email"
+                type="email"
+                placeholder={t.emailPlaceholder}
+                required
+                value={form.email}
+                onChange={handleChange}
+                className={inputClass}
+              />
+              <textarea
+                name="message"
+                placeholder={t.messagePlaceholder}
+                required
+                rows={4}
+                value={form.message}
+                onChange={handleChange}
+                className={`${inputClass} resize-none`}
+              />
+              <div className="mt-10">
+                <button
+                  type="submit"
+                  disabled={status === "sending"}
+                  className="rounded-full bg-beige px-11 py-4 text-[11px] font-semibold uppercase text-navy transition-opacity duration-200 hover:opacity-90 disabled:opacity-50"
+                  style={{ letterSpacing: "0.22em" }}
+                >
+                  {status === "sending" ? t.sending : t.sendButton}
+                </button>
+              </div>
+              {status === "error" && (
+                <p
+                  className="mt-4 text-[10px] font-medium uppercase text-red-300 opacity-80"
+                  style={{ letterSpacing: "0.22em" }}
+                >
+                  {t.errorMessage}
+                </p>
+              )}
+            </form>
+          )}
+        </div>
       </div>
     </section>
   );

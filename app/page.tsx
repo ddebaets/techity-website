@@ -37,7 +37,7 @@ export default function Home() {
       <Nav t={t.nav} locale="en" />
       <main>
         <Hero t={t.hero} />
-        <Ticker />
+        <Ticker t={t.ticker} />
         <Services t={t.services} />
         <WhyUs t={t.whyUs} />
         <Partners t={t.partners} />

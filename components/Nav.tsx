@@ -30,85 +30,98 @@ export default function Nav({
     { href: "#contact", label: t.contact },
   ];
 
-  const textColor = scrolled ? "text-navy" : "text-beige";
+  // On hero (top), header sits on the navy bg → beige fg.
+  // On scroll, fade in beige bg with navy fg.
+  const fg = scrolled ? "text-navy" : "text-beige";
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-beige shadow-sm" : "bg-transparent"
+      className={`fixed top-0 left-0 right-0 z-50 transition-[background-color,box-shadow] duration-300 ${
+        scrolled ? "bg-beige/95 backdrop-blur-sm" : "bg-transparent"
       }`}
     >
-      <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="#top" className="flex items-center">
+      <nav className="mx-auto flex h-16 items-center justify-between px-6 md:h-[72px] md:px-20">
+        <a href="#top" className="flex items-center" aria-label="Techity home">
           <Image
             src={scrolled ? "/logo-navy.png" : "/logo-beige.png"}
             alt="Techity"
-            width={120}
-            height={40}
-            className="object-contain h-8 w-auto"
+            width={156}
+            height={26}
+            className="h-[22px] w-auto md:h-[26px]"
             priority
           />
         </a>
 
         <ul
-          className={`hidden md:flex items-center gap-8 text-xs tracking-[0.2em] uppercase transition-colors ${textColor}`}
+          className={`hidden items-center md:flex ${fg} transition-colors`}
+          style={{ gap: 36 }}
         >
           {links.map(({ href, label }) => (
             <li key={href}>
-              <a href={href} className="hover:opacity-50 transition-opacity">
+              <a
+                href={href}
+                className="text-[11px] font-medium uppercase leading-none opacity-65 transition-opacity duration-200 hover:opacity-100"
+                style={{ letterSpacing: "0.22em" }}
+              >
                 {label}
               </a>
             </li>
           ))}
+        </ul>
 
-          <li className="flex items-center gap-2 ml-4 pl-4 border-l border-current/20">
-            {(Object.keys(localePaths) as Locale[]).map((loc) => (
+        <ul
+          className={`hidden items-center md:flex ${fg} transition-colors`}
+          style={{ gap: 14 }}
+        >
+          {(Object.keys(localePaths) as Locale[]).map((loc) => (
+            <li key={loc}>
               <a
-                key={loc}
                 href={localePaths[loc]}
-                className={`text-[10px] tracking-[0.15em] transition-opacity ${
+                className={`text-[11px] uppercase leading-none transition-opacity duration-200 ${
                   loc === locale
-                    ? "opacity-100 font-medium"
-                    : "opacity-35 hover:opacity-70"
+                    ? "font-semibold opacity-100"
+                    : "font-medium opacity-35 hover:opacity-70"
                 }`}
+                style={{ letterSpacing: "0.22em" }}
               >
                 {localeLabels[loc]}
               </a>
-            ))}
-          </li>
+            </li>
+          ))}
         </ul>
 
         <button
-          className={`md:hidden flex flex-col gap-1.5 transition-colors ${textColor}`}
+          className={`flex flex-col gap-1.5 md:hidden ${fg} transition-colors`}
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
           <span
-            className={`block w-6 h-px bg-current transition-transform origin-center ${
-              menuOpen ? "rotate-45 translate-y-[7px]" : ""
+            className={`block h-px w-6 bg-current transition-transform ${
+              menuOpen ? "translate-y-[7px] rotate-45" : ""
             }`}
           />
           <span
-            className={`block w-6 h-px bg-current transition-opacity ${
+            className={`block h-px w-6 bg-current transition-opacity ${
               menuOpen ? "opacity-0" : ""
             }`}
           />
           <span
-            className={`block w-6 h-px bg-current transition-transform origin-center ${
-              menuOpen ? "-rotate-45 -translate-y-[7px]" : ""
+            className={`block h-px w-6 bg-current transition-transform ${
+              menuOpen ? "-translate-y-[7px] -rotate-45" : ""
             }`}
           />
         </button>
       </nav>
 
       {menuOpen && (
-        <div className="md:hidden bg-navy border-t border-beige/10 px-6 pb-8 pt-4">
-          <ul className="flex flex-col gap-5">
+        <div className="border-t border-[var(--color-hair-on-navy)] bg-navy px-6 pb-10 pt-6 md:hidden">
+          <ul className="flex flex-col gap-6">
             {links.map(({ href, label }) => (
               <li key={href}>
                 <a
                   href={href}
-                  className="text-beige/80 text-xs tracking-[0.2em] uppercase hover:text-beige transition-colors"
+                  className="text-[11px] font-medium uppercase text-beige opacity-80 transition-opacity hover:opacity-100"
+                  style={{ letterSpacing: "0.22em" }}
                   onClick={() => setMenuOpen(false)}
                 >
                   {label}
@@ -117,16 +130,20 @@ export default function Nav({
             ))}
           </ul>
 
-          <div className="flex gap-4 mt-8 pt-6 border-t border-beige/10">
+          <div
+            className="mt-8 flex border-t border-[var(--color-hair-on-navy)] pt-6"
+            style={{ gap: 14 }}
+          >
             {(Object.keys(localePaths) as Locale[]).map((loc) => (
               <a
                 key={loc}
                 href={localePaths[loc]}
-                className={`text-[10px] tracking-[0.2em] uppercase transition-opacity ${
+                className={`text-[11px] uppercase ${
                   loc === locale
-                    ? "text-beige"
-                    : "text-beige/35 hover:text-beige/70"
+                    ? "font-semibold text-beige opacity-100"
+                    : "font-medium text-beige opacity-35 hover:opacity-70"
                 }`}
+                style={{ letterSpacing: "0.22em" }}
               >
                 {localeLabels[loc]}
               </a>

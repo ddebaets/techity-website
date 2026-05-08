@@ -1,28 +1,84 @@
+import Image from "next/image";
 import type { Translations } from "@/lib/i18n";
 
 export default function WhyUs({ t }: { t: Translations["whyUs"] }) {
   return (
-    <section id="why-us" className="bg-navy py-28 px-6">
-      <div className="max-w-6xl mx-auto">
-        <div className="mb-16">
-          <p className="text-beige/40 text-[10px] tracking-[0.4em] uppercase mb-3">
-            {t.label}
-          </p>
-          <h2 className="text-beige text-4xl md:text-5xl font-extralight leading-tight">
-            {t.heading1}
-            <br />
-            <span className="text-beige/55">{t.heading2}</span>
-          </h2>
+    <section
+      id="why-us"
+      className="relative overflow-hidden bg-navy px-6 pb-24 pt-24 text-beige md:px-20 md:pb-40 md:pt-36"
+    >
+      {/* Quiet watermark, top-left, partially clipped */}
+      <Image
+        src="/t-icon-beige.png"
+        alt=""
+        aria-hidden
+        width={300}
+        height={350}
+        className="pointer-events-none absolute -left-[120px] top-10 hidden h-[480px] w-auto object-contain opacity-[0.05] md:block"
+      />
+
+      <div className="relative">
+        {/* Section header */}
+        <div className="flex items-center justify-between gap-6 border-b border-[var(--color-hair-on-navy)] pb-7">
+          <span
+            className="text-[10px] font-medium uppercase leading-none text-beige opacity-55 md:text-[11px]"
+            style={{ letterSpacing: "0.4em" }}
+          >
+            {t.eyebrow}
+          </span>
+          <span
+            className="tabular text-[10px] font-medium uppercase leading-none text-beige opacity-40 md:text-[11px]"
+            style={{ letterSpacing: "0.22em" }}
+          >
+            {t.count}
+          </span>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 border-t border-beige/10 pt-12">
+        {/* Section title */}
+        <h2
+          className="m-0 mt-12 max-w-[1240px] font-thin text-beige md:mt-16"
+          style={{
+            fontSize: "clamp(44px, 9vw, 124px)",
+            lineHeight: 0.95,
+            letterSpacing: "-0.045em",
+            fontWeight: 100,
+          }}
+        >
+          {t.heading1}
+          <br />
+          <em className="accent">{t.heading2}</em>
+        </h2>
+
+        {/* Pillars grid */}
+        <div className="mt-16 grid grid-cols-1 gap-12 border-t border-[var(--color-hair-on-navy)] pt-14 md:mt-24 md:grid-cols-3 md:gap-20">
           {t.pillars.map(({ title, body }, i) => (
             <div key={i}>
-              <span className="block text-beige/25 text-6xl font-extralight mb-6 leading-none">
+              <span
+                className="block opacity-[0.22]"
+                style={{
+                  fontSize: "clamp(56px, 6vw, 88px)",
+                  fontWeight: 100,
+                  lineHeight: 1,
+                  letterSpacing: "-0.04em",
+                  marginBottom: 32,
+                }}
+              >
                 {String(i + 1).padStart(2, "0")}
               </span>
-              <h3 className="text-beige text-base font-medium mb-3">{title}</h3>
-              <p className="text-beige/65 text-sm leading-relaxed">{body}</p>
+              <h3
+                className="m-0 mb-4 text-beige"
+                style={{
+                  fontSize: 22,
+                  fontWeight: 400,
+                  letterSpacing: "-0.01em",
+                  lineHeight: 1.05,
+                }}
+              >
+                {title}
+              </h3>
+              <p className="m-0 text-[15px] font-light leading-[1.7] text-beige opacity-70">
+                {body}
+              </p>
             </div>
           ))}
         </div>

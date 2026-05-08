@@ -8,19 +8,27 @@ export type Translations = {
     contact: string;
   };
   hero: {
+    eyebrow: string;
     heading1: string;
     heading2: string;
     sub: string;
     cta: string;
-    scroll: string;
+    ledgerLocation: string;
+    ledgerEmail: string;
+  };
+  ticker: {
+    items: [string, string, string, string, string, string];
   };
   services: {
-    label: string;
-    heading: string;
+    eyebrow: string;
+    count: string;
+    heading1: string;
+    heading2: string;
     items: Array<{ title: string; description: string }>;
   };
   whyUs: {
-    label: string;
+    eyebrow: string;
+    count: string;
     heading1: string;
     heading2: string;
     pillars: Array<{ title: string; body: string }>;
@@ -29,9 +37,13 @@ export type Translations = {
     label: string;
   };
   contact: {
-    label: string;
-    heading: string;
+    eyebrow: string;
+    countEmail: string;
+    heading1: string;
+    heading2: string;
     body: string;
+    email: string;
+    linkedin: string;
     namePlaceholder: string;
     emailPlaceholder: string;
     messagePlaceholder: string;
@@ -43,27 +55,41 @@ export type Translations = {
     errorMessage: string;
   };
   footer: {
-    allRightsReserved: string;
+    rights: string;
   };
 };
 
 const en: Translations = {
   nav: {
     services: "Services",
-    whyUs: "Why Us",
+    whyUs: "Why us",
     partners: "Partners",
     contact: "Contact",
   },
   hero: {
-    heading1: "IT you don't have",
+    eyebrow: "Managed IT for small businesses",
+    heading1: "IT you don’t have",
     heading2: "to think about.",
-    sub: "Simple, fully managed IT for small businesses — backed by people who take the time to understand yours before recommending anything.",
-    cta: "Let's talk",
-    scroll: "Scroll",
+    sub: "Microsoft 365, Ubiquiti networks, immutable backup, automation — one partner, sized to your real needs, never oversold.",
+    cta: "Let’s talk",
+    ledgerLocation: "50.85°N / 4.35°E · Brussels",
+    ledgerEmail: "hello@techity.io",
+  },
+  ticker: {
+    items: [
+      "Cloud Collaboration",
+      "Data Networks",
+      "IT Support & Monitoring",
+      "Hardware & Software",
+      "Backup & Restore",
+      "Automation & Apps",
+    ],
   },
   services: {
-    label: "What we do",
-    heading: "Our services",
+    eyebrow: "What we do",
+    count: "06 services",
+    heading1: "Everything you need.",
+    heading2: "Nothing you don’t.",
     items: [
       {
         title: "Microsoft 365",
@@ -86,19 +112,20 @@ const en: Translations = {
           "Tamper-proof, automated backup for your Microsoft 365 data. Set once, monitored always — your data is safe even if the worst happens.",
       },
       {
-        title: "IT Support & Monitoring",
+        title: "Support & Monitoring",
         description:
-          "Proactive monitoring catches issues before you notice them. When something does need attention, we're fast — remote or on-site.",
+          "Proactive monitoring catches issues before you notice them. When something does need attention, we’re fast — remote or on-site.",
       },
       {
-        title: "Smart Automation & Apps",
+        title: "Smart Automation",
         description:
           "Home Assistant deployments, custom integrations, and bespoke app development for businesses that want to go a step further.",
       },
     ],
   },
   whyUs: {
-    label: "Why Techity",
+    eyebrow: "Why Techity",
+    count: "03 pillars",
     heading1: "IT that fits your business.",
     heading2: "Not the other way around.",
     pillars: [
@@ -112,7 +139,7 @@ const en: Translations = {
       },
       {
         title: "Quality without compromise",
-        body: "We hold ourselves to enterprise standards regardless of your company size. Being small doesn't mean settling for second-rate. Our clients feel the difference.",
+        body: "We hold ourselves to enterprise standards regardless of your company size. Being small doesn’t mean settling for second-rate. Our clients feel the difference.",
       },
     ],
   },
@@ -120,22 +147,26 @@ const en: Translations = {
     label: "Our trusted partners",
   },
   contact: {
-    label: "Contact",
-    heading: "Let's talk.",
-    body: "Ready to simplify your IT? Drop us a message and we'll get back to you within one business day.",
+    eyebrow: "Contact",
+    countEmail: "hello@techity.io",
+    heading1: "Let’s",
+    heading2: "talk.",
+    body: "Ready to simplify your IT? Drop us a message and we’ll get back to you within one business day.",
+    email: "hello@techity.io",
+    linkedin: "LinkedIn ↗",
     namePlaceholder: "Your name",
     emailPlaceholder: "Your email",
     messagePlaceholder: "How can we help?",
     sendButton: "Send message",
     sending: "Sending…",
     successTitle: "Message received.",
-    successSub: "We'll be in touch soon.",
+    successSub: "We’ll be in touch soon.",
     sendAnother: "Send another",
     errorMessage:
       "Something went wrong. Please try again or email us directly.",
   },
   footer: {
-    allRightsReserved: "All rights reserved.",
+    rights: "All rights reserved",
   },
 };
 
@@ -147,15 +178,29 @@ const fr: Translations = {
     contact: "Contact",
   },
   hero: {
-    heading1: "L'IT que vous n'avez pas",
+    eyebrow: "IT géré pour petites entreprises",
+    heading1: "L’IT que vous n’avez pas",
     heading2: "à gérer.",
-    sub: "IT entièrement géré pour les petites entreprises — par des gens qui prennent le temps de comprendre votre activité avant de recommander quoi que ce soit.",
+    sub: "Microsoft 365, réseaux Ubiquiti, backup immuable, automatisation — un seul partenaire, adapté à vos vrais besoins, jamais sur-vendu.",
     cta: "Parlons-en",
-    scroll: "Défiler",
+    ledgerLocation: "50,85°N / 4,35°E · Bruxelles",
+    ledgerEmail: "hello@techity.io",
+  },
+  ticker: {
+    items: [
+      "Collaboration Cloud",
+      "Réseaux de données",
+      "Support & Monitoring IT",
+      "Matériel & Logiciels",
+      "Sauvegarde & Restauration",
+      "Automatisation & Apps",
+    ],
   },
   services: {
-    label: "Ce que nous faisons",
-    heading: "Nos services",
+    eyebrow: "Ce que nous faisons",
+    count: "06 services",
+    heading1: "Tout ce qu’il vous faut.",
+    heading2: "Rien de superflu.",
     items: [
       {
         title: "Microsoft 365",
@@ -165,38 +210,39 @@ const fr: Translations = {
       {
         title: "Modern Workplace",
         description:
-          "Un environnement de travail complet et sécurisé pour votre équipe — sur n'importe quel appareil, depuis n'importe où. Nous l'installons et le maintenons.",
+          "Un environnement de travail complet et sécurisé pour votre équipe — sur n’importe quel appareil, depuis n’importe où. Nous l’installons et le maintenons.",
       },
       {
         title: "Réseau & Infrastructure",
         description:
-          "Déploiements réseau Ubiquiti complets : WiFi, switching, contrôle d'accès physique et caméras de sécurité. Bien fait dès le premier jour.",
+          "Déploiements réseau Ubiquiti complets : WiFi, switching, contrôle d’accès physique et caméras de sécurité. Bien fait dès le premier jour.",
       },
       {
         title: "Backup immuable",
         description:
-          "Sauvegarde automatisée et inviolable de vos données Microsoft 365. Configuré une fois, surveillé en permanence — vos données sont protégées même en cas d'incident.",
+          "Sauvegarde automatisée et inviolable de vos données Microsoft 365. Configuré une fois, surveillé en permanence — vos données sont protégées même en cas d’incident.",
       },
       {
-        title: "Support IT & Monitoring",
+        title: "Support & Monitoring",
         description:
           "Un monitoring proactif détecte les problèmes avant que vous ne les remarquiez. Quand une intervention est nécessaire, nous intervenons rapidement — à distance ou sur site.",
       },
       {
-        title: "Automatisation & Applications",
+        title: "Automatisation intelligente",
         description:
-          "Déploiements Home Assistant, intégrations personnalisées et développement d'applications sur mesure pour les entreprises qui veulent aller plus loin.",
+          "Déploiements Home Assistant, intégrations personnalisées et développement d’applications sur mesure pour les entreprises qui veulent aller plus loin.",
       },
     ],
   },
   whyUs: {
-    label: "Pourquoi Techity",
-    heading1: "Un IT qui s'adapte à votre entreprise.",
-    heading2: "Pas l'inverse.",
+    eyebrow: "Pourquoi Techity",
+    count: "03 piliers",
+    heading1: "Un IT qui s’adapte à votre entreprise.",
+    heading2: "Pas l’inverse.",
     pillars: [
       {
         title: "Nous écoutons avant de recommander",
-        body: "Nous prenons le temps de comprendre votre entreprise, votre équipe et vos besoins réels — avant de suggérer quoi que ce soit. Pas d'outils inutiles, pas de solutions surdimensionnées.",
+        body: "Nous prenons le temps de comprendre votre entreprise, votre équipe et vos besoins réels — avant de suggérer quoi que ce soit. Pas d’outils inutiles, pas de solutions surdimensionnées.",
       },
       {
         title: "Entièrement géré, du début à la fin",
@@ -212,9 +258,13 @@ const fr: Translations = {
     label: "Nos partenaires de confiance",
   },
   contact: {
-    label: "Contact",
-    heading: "Parlons-en.",
-    body: "Prêt à simplifier votre IT ? Envoyez-nous un message et nous vous répondrons dans un délai d'un jour ouvrable.",
+    eyebrow: "Contact",
+    countEmail: "hello@techity.io",
+    heading1: "Parlons",
+    heading2: "un peu.",
+    body: "Prêt à simplifier votre IT ? Envoyez-nous un message et nous vous répondrons dans un délai d’un jour ouvrable.",
+    email: "hello@techity.io",
+    linkedin: "LinkedIn ↗",
     namePlaceholder: "Votre nom",
     emailPlaceholder: "Votre email",
     messagePlaceholder: "Comment pouvons-nous vous aider ?",
@@ -224,10 +274,10 @@ const fr: Translations = {
     successSub: "Nous vous répondrons bientôt.",
     sendAnother: "Envoyer un autre message",
     errorMessage:
-      "Une erreur s'est produite. Veuillez réessayer ou nous envoyer un email directement.",
+      "Une erreur s’est produite. Veuillez réessayer ou nous envoyer un email directement.",
   },
   footer: {
-    allRightsReserved: "Tous droits réservés.",
+    rights: "Tous droits réservés",
   },
 };
 
@@ -239,15 +289,29 @@ const nl: Translations = {
     contact: "Contact",
   },
   hero: {
+    eyebrow: "Beheerde IT voor kleine bedrijven",
     heading1: "IT waar u niet aan",
     heading2: "hoeft te denken.",
-    sub: "Volledig beheerde IT voor kleine bedrijven — door mensen die de tijd nemen om uw bedrijf te begrijpen voor ze iets aanbevelen.",
+    sub: "Microsoft 365, Ubiquiti-netwerken, onveranderlijke back-up, automatisering — één partner, op maat van uw echte behoeften, nooit overdreven.",
     cta: "Laten we praten",
-    scroll: "Scrollen",
+    ledgerLocation: "50,85°N / 4,35°O · Brussel",
+    ledgerEmail: "hello@techity.io",
+  },
+  ticker: {
+    items: [
+      "Cloud-samenwerking",
+      "Datanetwerken",
+      "IT-support & Monitoring",
+      "Hardware & Software",
+      "Back-up & Restore",
+      "Automatisering & Apps",
+    ],
   },
   services: {
-    label: "Wat we doen",
-    heading: "Onze diensten",
+    eyebrow: "Wat we doen",
+    count: "06 diensten",
+    heading1: "Alles wat u nodig heeft.",
+    heading2: "Niets meer dan dat.",
     items: [
       {
         title: "Microsoft 365",
@@ -262,7 +326,7 @@ const nl: Translations = {
       {
         title: "Netwerk & Infrastructuur",
         description:
-          "Volledige Ubiquiti-netwerkinzet inclusief WiFi, switching, fysieke toegangscontrole en beveiligingscamera's. Vanaf dag één correct gebouwd.",
+          "Volledige Ubiquiti-netwerkinzet inclusief WiFi, switching, fysieke toegangscontrole en beveiligingscamera’s. Vanaf dag één correct gebouwd.",
       },
       {
         title: "Onveranderlijke back-up",
@@ -270,19 +334,20 @@ const nl: Translations = {
           "Manipulatiebestendige, geautomatiseerde back-up van uw Microsoft 365-gegevens. Eenmalig ingesteld, continu bewaakt — uw data is veilig, ook bij het ergste scenario.",
       },
       {
-        title: "IT-support & Monitoring",
+        title: "Support & Monitoring",
         description:
           "Proactieve monitoring spoort problemen op voordat u ze opmerkt. Als er toch iets nodig is, zijn we snel — op afstand of ter plaatse.",
       },
       {
-        title: "Slimme automatisering & Apps",
+        title: "Slimme automatisering",
         description:
           "Home Assistant-implementaties, aangepaste integraties en op maat gemaakte applicaties voor bedrijven die een stap verder willen gaan.",
       },
     ],
   },
   whyUs: {
-    label: "Waarom Techity",
+    eyebrow: "Waarom Techity",
+    count: "03 pijlers",
     heading1: "IT die past bij uw bedrijf.",
     heading2: "Niet andersom.",
     pillars: [
@@ -292,7 +357,7 @@ const nl: Translations = {
       },
       {
         title: "Volledig beheerd, van start tot finish",
-        body: "Van uw Microsoft 365-tenant tot uw netwerk tot uw back-ups — alles wordt door ons afgehandeld. Eén partner, één aanspreekpunt, nul IT-kopzorgen.",
+        body: "Van uw Microsoft 365-tenant tot uw netwerk tot uw back-ups — alles wordt door ons afgehandeld. Één partner, één aanspreekpunt, nul IT-kopzorgen.",
       },
       {
         title: "Kwaliteit zonder compromissen",
@@ -304,9 +369,13 @@ const nl: Translations = {
     label: "Onze vertrouwde partners",
   },
   contact: {
-    label: "Contact",
-    heading: "Laten we praten.",
+    eyebrow: "Contact",
+    countEmail: "hello@techity.io",
+    heading1: "Laten we",
+    heading2: "praten.",
     body: "Klaar om uw IT te vereenvoudigen? Stuur ons een bericht en we reageren binnen één werkdag.",
+    email: "hello@techity.io",
+    linkedin: "LinkedIn ↗",
     namePlaceholder: "Uw naam",
     emailPlaceholder: "Uw e-mail",
     messagePlaceholder: "Hoe kunnen we helpen?",
@@ -319,7 +388,7 @@ const nl: Translations = {
       "Er is iets misgegaan. Probeer het opnieuw of e-mail ons rechtstreeks.",
   },
   footer: {
-    allRightsReserved: "Alle rechten voorbehouden.",
+    rights: "Alle rechten voorbehouden",
   },
 };
 

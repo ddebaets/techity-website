@@ -2,35 +2,84 @@ import type { Translations } from "@/lib/i18n";
 
 export default function Services({ t }: { t: Translations["services"] }) {
   return (
-    <section id="services" className="bg-beige py-28 px-6">
-      <div className="max-w-6xl mx-auto">
-        <div className="mb-16">
-          <p className="text-navy/40 text-[10px] tracking-[0.4em] uppercase mb-3">
-            {t.label}
-          </p>
-          <h2 className="text-navy text-4xl md:text-5xl font-extralight">
-            {t.heading}
-          </h2>
-        </div>
+    <section
+      id="services"
+      className="bg-beige px-6 pb-24 pt-24 text-navy md:px-20 md:pb-40 md:pt-36"
+    >
+      {/* Section header */}
+      <div className="flex items-center justify-between gap-6 border-b border-[var(--color-hair-on-cream)] pb-7">
+        <span
+          className="text-[10px] font-medium uppercase leading-none text-navy opacity-55 md:text-[11px]"
+          style={{ letterSpacing: "0.4em" }}
+        >
+          {t.eyebrow}
+        </span>
+        <span
+          className="tabular text-[10px] font-medium uppercase leading-none text-navy opacity-40 md:text-[11px]"
+          style={{ letterSpacing: "0.22em" }}
+        >
+          {t.count}
+        </span>
+      </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-navy/10">
-          {t.items.map(({ title, description }, i) => (
-            <div
+      {/* Section title */}
+      <h2
+        className="m-0 mt-12 max-w-[1240px] font-thin text-navy md:mt-16"
+        style={{
+          fontSize: "clamp(44px, 9vw, 124px)",
+          lineHeight: 0.95,
+          letterSpacing: "-0.045em",
+          fontWeight: 100,
+        }}
+      >
+        {t.heading1}
+        <br />
+        <em className="accent">{t.heading2}</em>
+      </h2>
+
+      {/* Editorial spread — alternating columns on desktop, single col on mobile */}
+      <div className="mt-16 grid grid-cols-1 gap-x-20 md:mt-24 md:grid-cols-2">
+        {t.items.map(({ title, description }, i) => {
+          const isLeft = i % 2 === 0;
+          return (
+            <article
               key={i}
-              className="bg-beige p-8 group hover:bg-navy transition-colors duration-300 cursor-default flex flex-col"
+              className={`grid grid-cols-[minmax(64px,140px)_1fr] items-baseline gap-6 border-t border-[var(--color-hair-on-cream)] py-10 md:grid-cols-[minmax(80px,180px)_1fr] md:gap-9 md:py-14 ${
+                isLeft ? "md:col-start-1" : "md:col-start-2"
+              }`}
             >
-              <span className="block text-navy/40 group-hover:text-beige/40 text-xs tracking-widest mb-4 font-light transition-colors">
+              <span
+                className="tabular italic opacity-40"
+                style={{
+                  fontSize: "clamp(48px, 6vw, 96px)",
+                  fontWeight: 100,
+                  lineHeight: 0.95,
+                  letterSpacing: "-0.04em",
+                }}
+              >
                 {String(i + 1).padStart(2, "0")}
               </span>
-              <h3 className="text-navy group-hover:text-beige text-lg font-medium mb-3 transition-colors leading-snug">
-                {title}
-              </h3>
-              <p className="text-navy/70 group-hover:text-beige/70 text-sm leading-relaxed transition-colors">
-                {description}
-              </p>
-            </div>
-          ))}
-        </div>
+              <div>
+                <h3
+                  className="m-0 mb-3.5 text-navy"
+                  style={{
+                    fontSize: "clamp(22px, 2.5vw, 32px)",
+                    fontWeight: 200,
+                    letterSpacing: "-0.018em",
+                    lineHeight: 1.05,
+                  }}
+                >
+                  {title}
+                </h3>
+                <p
+                  className="m-0 max-w-[460px] text-[14px] font-light leading-[1.7] text-navy opacity-70"
+                >
+                  {description}
+                </p>
+              </div>
+            </article>
+          );
+        })}
       </div>
     </section>
   );

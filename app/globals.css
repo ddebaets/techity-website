@@ -4,6 +4,34 @@
   --color-navy: #212835;
   --color-beige: #efeae4;
   --color-beige-muted: #e5dfd8;
+
+  --color-hair-on-navy: rgba(239, 234, 228, 0.10);
+  --color-hair-on-navy-strong: rgba(239, 234, 228, 0.25);
+  --color-hair-on-cream: rgba(33, 40, 53, 0.10);
+
+  --font-display: var(--font-inter), "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-display);
+  background-color: var(--color-beige);
+  color: var(--color-navy);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "ss01", "cv01";
+}
+
+/* Italic accent rule — every major Whisper headline splits its second line
+   into an italic "accent" at half opacity. Centralized here so we don't
+   re-declare it on every component. */
+.accent {
+  font-style: italic;
+  font-weight: 200;
+  opacity: 0.55;
 }
 
 @keyframes ticker {
@@ -12,17 +40,10 @@
 }
 
 .ticker-track {
-  animation: ticker 30s linear infinite;
+  animation: ticker 60s linear infinite;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #efeae4;
-  color: #212835;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Tabular numerals for ledgers and counts */
+.tabular {
+  font-variant-numeric: tabular-nums;
 }

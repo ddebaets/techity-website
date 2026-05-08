@@ -2,55 +2,87 @@ import Image from "next/image";
 import type { Translations } from "@/lib/i18n";
 
 export default function Hero({ t }: { t: Translations["hero"] }) {
-  const patternText = Array(300).fill("TECHITY").join(" · ");
-
   return (
     <section
       id="top"
-      className="bg-navy min-h-screen flex flex-col items-center justify-center text-center px-6 relative overflow-hidden"
+      className="relative flex min-h-[100svh] flex-col overflow-hidden bg-navy text-beige"
     >
-      <div
-        className="absolute inset-0 select-none pointer-events-none overflow-hidden leading-7 text-[10px] tracking-widest text-beige break-words opacity-[0.025]"
-        aria-hidden="true"
-      >
-        {patternText}
-      </div>
+      {/* Watermark T-mark (desktop only) */}
+      <Image
+        src="/t-icon-beige.png"
+        alt=""
+        aria-hidden
+        width={360}
+        height={420}
+        priority
+        className="pointer-events-none absolute right-[120px] top-[140px] hidden h-[620px] w-auto object-contain opacity-[0.08] md:block"
+      />
 
-      <div className="relative z-10 flex flex-col items-center gap-8 max-w-2xl">
-        <Image
-          src="/t-icon-beige.png"
-          alt="Techity"
-          width={120}
-          height={120}
-          className="object-contain h-20 w-auto"
-          priority
-        />
+      {/* Body — centered, generous whitespace */}
+      <div className="relative z-10 flex flex-1 flex-col justify-center px-6 pb-32 pt-32 md:px-20 md:pb-24 md:pt-32">
+        {/* Eyebrow rail */}
+        <div
+          className="mb-8 flex items-center md:mb-9"
+          style={{ gap: 14 }}
+        >
+          <span
+            className="inline-block h-px w-7 bg-beige opacity-40 md:w-10"
+            aria-hidden
+          />
+          <span
+            className="text-[10px] font-medium uppercase leading-none text-beige opacity-60 md:text-[11px]"
+            style={{ letterSpacing: "0.22em" }}
+          >
+            {t.eyebrow}
+          </span>
+        </div>
 
-        <div className="w-12 h-px bg-beige/20" />
-
-        <h1 className="text-beige text-5xl md:text-7xl font-extralight leading-[1.1] tracking-tight">
+        {/* Headline */}
+        <h1
+          className="m-0 max-w-[1240px] font-thin text-beige"
+          style={{
+            fontSize: "clamp(56px, 11vw, 156px)",
+            lineHeight: 0.92,
+            letterSpacing: "-0.05em",
+            fontWeight: 100,
+          }}
+        >
           {t.heading1}
           <br />
-          <em className="not-italic font-light">{t.heading2}</em>
+          <em className="accent">{t.heading2}</em>
         </h1>
 
-        <p className="text-beige/70 text-base md:text-lg max-w-md leading-relaxed">
-          {t.sub}
-        </p>
-
-        <a
-          href="#contact"
-          className="mt-2 px-10 py-3.5 border border-beige/40 text-beige text-xs tracking-[0.25em] uppercase hover:bg-beige hover:text-navy transition-all duration-300"
-        >
-          {t.cta}
-        </a>
+        {/* Sub row — paragraph + CTA */}
+        <div className="mt-9 flex flex-col items-start gap-8 md:mt-14 md:flex-row md:items-end md:justify-between md:gap-16">
+          <p
+            className="m-0 max-w-[460px] text-[15px] font-light leading-[1.6] text-beige opacity-65 md:text-[17px]"
+          >
+            {t.sub}
+          </p>
+          <a
+            href="#contact"
+            className="inline-flex shrink-0 items-center justify-center rounded-full bg-beige px-9 py-3.5 text-[11px] font-semibold uppercase text-navy transition-opacity duration-200 hover:opacity-90 md:px-11"
+            style={{ letterSpacing: "0.22em" }}
+          >
+            {t.cta}
+          </a>
+        </div>
       </div>
 
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-30">
-        <span className="text-beige text-[10px] tracking-[0.3em] uppercase">
-          {t.scroll}
+      {/* Bottom ledger */}
+      <div className="relative z-10 flex flex-col gap-3 border-t border-[var(--color-hair-on-navy)] px-6 py-5 md:absolute md:bottom-9 md:left-20 md:right-20 md:flex-row md:items-center md:justify-between md:border-0 md:p-0">
+        <span
+          className="text-[9px] font-medium uppercase leading-none text-beige opacity-45 md:text-[11px]"
+          style={{ letterSpacing: "0.22em" }}
+        >
+          {t.ledgerLocation}
         </span>
-        <div className="w-px h-8 bg-beige" />
+        <span
+          className="text-[9px] font-medium uppercase leading-none text-beige opacity-45 md:text-[11px]"
+          style={{ letterSpacing: "0.22em" }}
+        >
+          {t.ledgerEmail}
+        </span>
       </div>
     </section>
   );

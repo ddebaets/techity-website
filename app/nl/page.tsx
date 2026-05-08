@@ -42,7 +42,7 @@ export default function HomeNl() {
       <Nav t={t.nav} locale="nl" />
       <main>
         <Hero t={t.hero} />
-        <Ticker />
+        <Ticker t={t.ticker} />
         <Services t={t.services} />
         <WhyUs t={t.whyUs} />
         <Partners t={t.partners} />
