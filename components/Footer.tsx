@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import ScrollLink from "@/components/ScrollLink";
 import type { Translations, Locale } from "@/lib/i18n";
 
 const localePrefix: Record<Locale, string> = {
@@ -36,7 +37,7 @@ export default function Footer({
       <div className="mx-auto max-w-6xl">
         {/* Top row — wordmark + section nav + copyright */}
         <div className="flex flex-col items-center justify-between gap-8 md:flex-row md:gap-6">
-          <a href="#top" aria-label="Techity home">
+          <ScrollLink href="#top" ariaLabel="Techity home">
             <Image
               src="/logo-beige.png"
               alt="Techity"
@@ -44,18 +45,18 @@ export default function Footer({
               height={22}
               className="h-[22px] w-auto opacity-50 transition-opacity hover:opacity-80"
             />
-          </a>
+          </ScrollLink>
 
           <nav className="flex flex-wrap justify-center" style={{ gap: 32 }}>
             {links.map(({ href, label }) => (
-              <a
+              <ScrollLink
                 key={href}
                 href={href}
                 className="text-[11px] font-medium uppercase leading-none text-beige opacity-50 transition-opacity hover:opacity-100 md:text-[12px]"
                 style={{ letterSpacing: "0.22em" }}
               >
                 {label}
-              </a>
+              </ScrollLink>
             ))}
           </nav>
 

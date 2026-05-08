@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ScrollLink from "@/components/ScrollLink";
 import type { Translations } from "@/lib/i18n";
 
 export default function Hero({ t }: { t: Translations["hero"] }) {
@@ -59,13 +60,13 @@ export default function Hero({ t }: { t: Translations["hero"] }) {
           >
             {t.sub}
           </p>
-          <a
+          <ScrollLink
             href="#contact"
             className="inline-flex shrink-0 items-center justify-center rounded-full bg-beige px-9 py-3.5 text-[12px] font-semibold uppercase text-navy transition-opacity duration-200 hover:opacity-90 md:px-11"
             style={{ letterSpacing: "0.22em" }}
           >
             {t.cta}
-          </a>
+          </ScrollLink>
         </div>
       </div>
 

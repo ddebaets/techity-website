@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import ScrollLink from "@/components/ScrollLink";
 import type { Translations, Locale } from "@/lib/i18n";
 
 const localePaths: Record<Locale, string> = { en: "/", fr: "/fr", nl: "/nl" };
@@ -42,7 +43,7 @@ export default function Nav({
       }`}
     >
       <nav className="mx-auto flex h-16 items-center justify-between px-6 md:h-[72px] md:px-20">
-        <a href="#top" className="flex items-center" aria-label="Techity home">
+        <ScrollLink href="#top" className="flex items-center" ariaLabel="Techity home">
           <Image
             src={scrolled ? "/logo-navy.png" : "/logo-beige.png"}
             alt="Techity"
@@ -51,7 +52,7 @@ export default function Nav({
             className="h-[22px] w-auto md:h-[26px]"
             priority
           />
-        </a>
+        </ScrollLink>
 
         <ul
           className={`hidden items-center md:flex ${fg} transition-colors`}
@@ -59,13 +60,13 @@ export default function Nav({
         >
           {links.map(({ href, label }) => (
             <li key={href}>
-              <a
+              <ScrollLink
                 href={href}
                 className="text-[12px] font-medium uppercase leading-none opacity-65 transition-opacity duration-200 hover:opacity-100"
                 style={{ letterSpacing: "0.22em" }}
               >
                 {label}
-              </a>
+              </ScrollLink>
             </li>
           ))}
         </ul>
@@ -120,14 +121,14 @@ export default function Nav({
           <ul className="flex flex-col gap-6">
             {links.map(({ href, label }) => (
               <li key={href}>
-                <a
+                <ScrollLink
                   href={href}
                   className="text-[12px] font-medium uppercase text-beige opacity-80 transition-opacity hover:opacity-100"
                   style={{ letterSpacing: "0.22em" }}
                   onClick={() => setMenuOpen(false)}
                 >
                   {label}
-                </a>
+                </ScrollLink>
               </li>
             ))}
           </ul>
