@@ -125,7 +125,7 @@ const localBusinessSchema = {
   ],
   founder: { "@type": "Person", name: "David De Baets" },
   knowsLanguage: ["en", "fr", "nl"],
-  sameAs: ["https://www.linkedin.com/company/techity"],
+  sameAs: ["https://www.linkedin.com/company/techity-io"],
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Managed IT services",

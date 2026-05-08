@@ -88,7 +88,7 @@ export default function Contact({ t }: { t: Translations["contact"] }) {
               {t.email}
             </a>
             <a
-              href="https://www.linkedin.com/company/techity"
+              href="https://www.linkedin.com/company/techity-io"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[13px] font-medium uppercase text-beige opacity-70 transition-opacity hover:opacity-100 md:text-[14px]"
