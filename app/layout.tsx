@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import { Inter } from "next/font/google";
+import { headers } from "next/headers";
 import "./globals.css";
 
 const inter = Inter({
@@ -140,7 +141,16 @@ const localBusinessSchema = {
   },
 };
 
-export default function RootLayout({
+// Pick `<html lang>` from the request path so each locale renders with the
+// correct attribute server-side (Googlebot indexes the SSR HTML, not the
+// post-hydration DOM). Falls back to "en" for the canonical/root.
+function langFromPath(pathname: string): "en" | "fr" | "nl" {
+  if (pathname === "/fr" || pathname.startsWith("/fr/")) return "fr";
+  if (pathname === "/nl" || pathname.startsWith("/nl/")) return "nl";
+  return "en";
+}
+
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
@@ -149,8 +159,11 @@ export default function RootLayout({
   const umamiSrc =
     process.env.NEXT_PUBLIC_UMAMI_SRC || "https://cloud.umami.is/script.js";
 
+  const pathname = (await headers()).get("x-pathname") ?? "/";
+  const lang = langFromPath(pathname);
+
   return (
-    <html lang="en" className={`${inter.variable} h-full`}>
+    <html lang={lang} className={`${inter.variable} h-full`}>
       <head>
         <script
           type="application/ld+json"

@@ -6,7 +6,6 @@ import Services from "@/components/Services";
 import WhyUs from "@/components/WhyUs";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import LangSetter from "@/components/LangSetter";
 import { translations } from "@/lib/i18n";
 
 const t = translations.nl;
@@ -37,7 +36,6 @@ export const metadata: Metadata = {
 export default function HomeNl() {
   return (
     <>
-      <LangSetter lang="nl" />
       <Nav t={t.nav} locale="nl" />
       <main>
         <Hero t={t.hero} />

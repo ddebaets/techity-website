@@ -6,7 +6,6 @@ import Services from "@/components/Services";
 import WhyUs from "@/components/WhyUs";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import LangSetter from "@/components/LangSetter";
 import { translations } from "@/lib/i18n";
 
 const t = translations.fr;
@@ -37,7 +36,6 @@ export const metadata: Metadata = {
 export default function HomeFr() {
   return (
     <>
-      <LangSetter lang="fr" />
       <Nav t={t.nav} locale="fr" />
       <main>
         <Hero t={t.hero} />
