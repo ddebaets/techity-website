@@ -77,14 +77,8 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  icons: {
-    icon: [
-      { url: "/favicon.png", type: "image/png" },
-      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
-      { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
-    ],
-    apple: "/apple-touch-icon.png",
-  },
+  // Icons are auto-discovered from app/icon.png, app/apple-icon.png, and
+  // public/favicon.ico — no manual <link> config needed.
   verification: {
     // Plug Google Search Console + Bing verification tokens here when received
     google: process.env.NEXT_PUBLIC_GSC_VERIFICATION,
