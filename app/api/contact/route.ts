@@ -13,7 +13,7 @@ export async function POST(req: NextRequest) {
 
   const { error } = await resend.emails.send({
     from: "Techity Contact <contact@techity.io>",
-    to: "david@techity.io",
+    to: "hello@techity.io",
     replyTo: email,
     subject: `New message from ${name}`,
     html: `
