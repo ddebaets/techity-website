@@ -13,7 +13,7 @@ export default function Partners({ t }: { t: Translations["partners"] }) {
           {partners.map((partner) => (
             <span
               key={partner}
-              className="text-navy/30 text-lg tracking-[0.2em] uppercase hover:text-navy/70 transition-colors duration-300 cursor-default select-none"
+              className="text-navy/45 text-lg tracking-[0.2em] uppercase hover:text-navy/80 transition-colors duration-300 cursor-default select-none"
             >
               {partner}
             </span>

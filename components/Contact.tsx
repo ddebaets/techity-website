@@ -47,7 +47,7 @@ export default function Contact({ t }: { t: Translations["contact"] }) {
             <h2 className="text-beige text-5xl md:text-6xl font-extralight mb-8 leading-tight">
               {t.heading}
             </h2>
-            <p className="text-beige/45 text-sm leading-relaxed max-w-xs">
+            <p className="text-beige/65 text-sm leading-relaxed max-w-xs">
               {t.body}
             </p>
           </div>
@@ -55,7 +55,7 @@ export default function Contact({ t }: { t: Translations["contact"] }) {
           <div className="mt-12 space-y-4 text-sm">
             <a
               href="mailto:hello@techity.io"
-              className="block text-beige/50 hover:text-beige transition-colors tracking-wide"
+              className="block text-beige/70 hover:text-beige transition-colors tracking-wide"
             >
               hello@techity.io
             </a>
@@ -63,7 +63,7 @@ export default function Contact({ t }: { t: Translations["contact"] }) {
               href="https://www.linkedin.com/company/techity"
               target="_blank"
               rel="noopener noreferrer"
-              className="block text-beige/50 hover:text-beige transition-colors tracking-wide"
+              className="block text-beige/70 hover:text-beige transition-colors tracking-wide"
             >
               LinkedIn ↗
             </a>

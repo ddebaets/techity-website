@@ -33,14 +33,14 @@ export default function Footer({
             <a
               key={href}
               href={href}
-              className="text-beige/30 text-[10px] tracking-[0.2em] uppercase hover:text-beige/70 transition-colors"
+              className="text-beige/50 text-[10px] tracking-[0.2em] uppercase hover:text-beige transition-colors"
             >
               {label}
             </a>
           ))}
         </nav>
 
-        <p className="text-beige/25 text-[10px] tracking-wide">
+        <p className="text-beige/45 text-[10px] tracking-wide">
           © {new Date().getFullYear()} Techity. {t.allRightsReserved}
         </p>
       </div>

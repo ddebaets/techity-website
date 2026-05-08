@@ -18,11 +18,11 @@ export default function Hero({ t }: { t: Translations["hero"] }) {
 
       <div className="relative z-10 flex flex-col items-center gap-8 max-w-2xl">
         <Image
-          src="/logo-beige.png"
+          src="/t-icon-beige.png"
           alt="Techity"
-          width={180}
-          height={60}
-          className="object-contain h-14 w-auto"
+          width={120}
+          height={120}
+          className="object-contain h-20 w-auto"
           priority
         />
 
@@ -34,7 +34,7 @@ export default function Hero({ t }: { t: Translations["hero"] }) {
           <em className="not-italic font-light">{t.heading2}</em>
         </h1>
 
-        <p className="text-beige/50 text-base md:text-lg max-w-md leading-relaxed">
+        <p className="text-beige/70 text-base md:text-lg max-w-md leading-relaxed">
           {t.sub}
         </p>
 

@@ -17,15 +17,15 @@ export default function Services({ t }: { t: Translations["services"] }) {
           {t.items.map(({ title, description }, i) => (
             <div
               key={i}
-              className="bg-beige p-8 group hover:bg-navy transition-colors duration-300 cursor-default"
+              className="bg-beige p-8 group hover:bg-navy transition-colors duration-300 cursor-default flex flex-col"
             >
-              <span className="block text-navy/25 group-hover:text-beige/25 text-xs tracking-widest mb-8 font-light transition-colors">
+              <span className="block text-navy/40 group-hover:text-beige/40 text-xs tracking-widest mb-4 font-light transition-colors">
                 {String(i + 1).padStart(2, "0")}
               </span>
               <h3 className="text-navy group-hover:text-beige text-lg font-medium mb-3 transition-colors leading-snug">
                 {title}
               </h3>
-              <p className="text-navy/55 group-hover:text-beige/55 text-sm leading-relaxed transition-colors">
+              <p className="text-navy/70 group-hover:text-beige/70 text-sm leading-relaxed transition-colors">
                 {description}
               </p>
             </div>
