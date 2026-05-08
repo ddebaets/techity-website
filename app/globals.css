@@ -23,15 +23,15 @@ html {
   }
 }
 
-/* Offset anchor jumps for the fixed header so section headings don't end up
-   hidden under the nav bar. Header is 64px on mobile, 72px on desktop, plus
-   a little breathing room. */
+/* Offset anchor jumps for the fixed header. Match the header height exactly
+   (64px mobile, 72px desktop) so the section's eyebrow lands flush below
+   the nav and the ticker bar above is fully scrolled out of view. */
 section[id] {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 64px;
 }
 @media (min-width: 768px) {
   section[id] {
-    scroll-margin-top: 96px;
+    scroll-margin-top: 72px;
   }
 }
 
