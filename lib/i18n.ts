@@ -283,7 +283,7 @@ const nl: Translations = {
     eyebrow: "Beheerde IT voor kleine bedrijven",
     heading1: "IT waar u niet aan",
     heading2: "hoeft te denken.",
-    sub: "Volledig beheerde IT voor kleine bedrijven, door mensen die de tijd nemen om uw bedrijf te begrijpen.",
+    sub: "Volledig beheerde IT voor kleine bedrijven, door mensen die de tijd nemen om uw activiteit te begrijpen.",
     cta: "Laten we praten",
     ledgerLocation: "50,85°N / 4,35°O · Brussel",
     ledgerEmail: "hello@techity.io",
@@ -339,12 +339,12 @@ const nl: Translations = {
   whyUs: {
     eyebrow: "Waarom Techity",
     count: "03 pijlers",
-    heading1: "IT die past bij uw bedrijf.",
+    heading1: "IT die past bij uw activiteit.",
     heading2: "Niet andersom.",
     pillars: [
       {
         title: "Wij luisteren voor we adviseren",
-        body: "We nemen de tijd om uw bedrijf, uw team en uw werkelijke behoeften te begrijpen voordat we iets voorstellen. Geen onnodige tools, geen opgeblazen oplossingen, geen upselling.",
+        body: "We nemen de tijd om uw activiteit, uw team en uw werkelijke behoeften te begrijpen voordat we iets voorstellen. Geen onnodige tools, geen opgeblazen oplossingen, geen upselling.",
       },
       {
         title: "Volledig beheerd, van start tot finish",
@@ -352,7 +352,7 @@ const nl: Translations = {
       },
       {
         title: "Kwaliteit zonder compromissen",
-        body: "We hanteren dezelfde kwaliteitsnormen als grote ondernemingen, ongeacht de grootte van uw bedrijf. Klein zijn betekent niet dat u genoegen moet nemen met minder. Onze klanten voelen het verschil.",
+        body: "We hanteren dezelfde kwaliteitsnormen als grote ondernemingen, ongeacht de grootte van uw activiteit. Klein zijn betekent niet dat u genoegen moet nemen met minder. Onze klanten voelen het verschil.",
       },
     ],
   },
