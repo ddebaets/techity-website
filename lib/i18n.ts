@@ -126,7 +126,7 @@ const en: Translations = {
   whyUs: {
     eyebrow: "Why Techity",
     count: "03 pillars",
-    heading1: "IT that fits your business.",
+    heading1: "Solutions that fit your business.",
     heading2: "Not the other way around.",
     pillars: [
       {
@@ -237,7 +237,7 @@ const fr: Translations = {
   whyUs: {
     eyebrow: "Pourquoi Techity",
     count: "03 piliers",
-    heading1: "Un IT qui s’adapte à votre entreprise.",
+    heading1: "Des solutions qui s’adaptent à votre entreprise.",
     heading2: "Pas l’inverse.",
     pillars: [
       {
@@ -348,7 +348,7 @@ const nl: Translations = {
   whyUs: {
     eyebrow: "Waarom Techity",
     count: "03 pijlers",
-    heading1: "IT die past bij uw activiteit.",
+    heading1: "Oplossingen die passen bij uw activiteit.",
     heading2: "Niet andersom.",
     pillars: [
       {
