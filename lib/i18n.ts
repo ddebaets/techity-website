@@ -53,6 +53,9 @@ export type Translations = {
   };
   footer: {
     rights: string;
+    privacy: string;
+    legal: string;
+    cookies: string;
   };
 };
 
@@ -161,6 +164,9 @@ const en: Translations = {
   },
   footer: {
     rights: "All rights reserved",
+    privacy: "Privacy",
+    legal: "Legal",
+    cookies: "Cookies",
   },
 };
 
@@ -269,6 +275,9 @@ const fr: Translations = {
   },
   footer: {
     rights: "Tous droits réservés",
+    privacy: "Confidentialité",
+    legal: "Mentions légales",
+    cookies: "Cookies",
   },
 };
 
@@ -377,6 +386,9 @@ const nl: Translations = {
   },
   footer: {
     rights: "Alle rechten voorbehouden",
+    privacy: "Privacy",
+    legal: "Juridisch",
+    cookies: "Cookies",
   },
 };
 

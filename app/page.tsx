@@ -41,7 +41,7 @@ export default function Home() {
         <WhyUs t={t.whyUs} />
         <Contact t={t.contact} />
       </main>
-      <Footer t={t.footer} nav={t.nav} />
+      <Footer t={t.footer} nav={t.nav} locale="en" />
     </>
   );
 }
