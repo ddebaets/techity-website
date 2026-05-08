@@ -12,7 +12,6 @@ export default function Footer({
     { href: "#top", label: nav.home },
     { href: "#services", label: nav.services },
     { href: "#why-us", label: nav.whyUs },
-    { href: "#partners", label: nav.partners },
     { href: "#contact", label: nav.contact },
   ];
 

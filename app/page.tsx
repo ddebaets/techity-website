@@ -4,7 +4,6 @@ import Hero from "@/components/Hero";
 import Ticker from "@/components/Ticker";
 import Services from "@/components/Services";
 import WhyUs from "@/components/WhyUs";
-import Partners from "@/components/Partners";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import { translations } from "@/lib/i18n";
@@ -12,9 +11,9 @@ import { translations } from "@/lib/i18n";
 const t = translations.en;
 
 export const metadata: Metadata = {
-  title: "Techity — IT you don't have to think about.",
+  title: "Techity, IT you don't have to think about.",
   description:
-    "Brussels-based managed IT for small businesses. Collaboration platforms, full Ubiquiti networks, immutable backup, modern workplace, automation — sized to your real needs, never oversold.",
+    "Brussels-based managed IT for small businesses. Collaboration platforms, full Ubiquiti networks, immutable backup, modern workplace, automation, sized to your real needs, never oversold.",
   alternates: {
     canonical: "/",
     languages: {
@@ -40,7 +39,6 @@ export default function Home() {
         <Ticker t={t.ticker} />
         <Services t={t.services} />
         <WhyUs t={t.whyUs} />
-        <Partners t={t.partners} />
         <Contact t={t.contact} />
       </main>
       <Footer t={t.footer} nav={t.nav} />

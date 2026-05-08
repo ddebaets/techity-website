@@ -13,11 +13,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://techity.io"),
   title: {
-    default: "Techity — IT you don't have to think about.",
+    default: "Techity, IT you don't have to think about.",
     template: "%s · Techity",
   },
   description:
-    "Fully managed IT for small businesses in Brussels — collaboration platforms, network & infrastructure, immutable backup, automation. We listen first, then right-size the solution.",
+    "Fully managed IT for small businesses in Brussels, collaboration platforms, network & infrastructure, immutable backup, automation. We listen first, then right-size the solution.",
   applicationName: "Techity",
   authors: [{ name: "Techity" }],
   generator: "Next.js",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: "Techity",
-    title: "Techity — IT you don't have to think about.",
+    title: "Techity, IT you don't have to think about.",
     description:
       "Fully managed IT for small businesses in Brussels. We listen, right-size the solution, and keep your costs lean.",
     url: "https://techity.io",
@@ -54,13 +54,13 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Techity — IT you don't have to think about.",
+        alt: "Techity, IT you don't have to think about.",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Techity — IT you don't have to think about.",
+    title: "Techity, IT you don't have to think about.",
     description:
       "Fully managed IT for small businesses in Brussels. We listen, right-size the solution, and keep your costs lean.",
     images: ["/og-image.png"],
@@ -92,7 +92,7 @@ const organizationSchema = {
   url: "https://techity.io",
   logo: "https://techity.io/logo-navy.png",
   description:
-    "Fully managed IT for small businesses — collaboration platforms, networks, infrastructure, backup and automation. Brussels-based.",
+    "Fully managed IT for small businesses, collaboration platforms, networks, infrastructure, backup and automation. Brussels-based.",
   email: "hello@techity.io",
   address: {
     "@type": "PostalAddress",

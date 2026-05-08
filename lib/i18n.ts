@@ -5,7 +5,6 @@ export type Translations = {
     home: string;
     services: string;
     whyUs: string;
-    partners: string;
     contact: string;
   };
   hero: {
@@ -33,9 +32,6 @@ export type Translations = {
     heading1: string;
     heading2: string;
     pillars: Array<{ title: string; body: string }>;
-  };
-  partners: {
-    label: string;
   };
   contact: {
     eyebrow: string;
@@ -65,14 +61,13 @@ const en: Translations = {
     home: "Home",
     services: "Services",
     whyUs: "Why us",
-    partners: "Partners",
     contact: "Contact",
   },
   hero: {
     eyebrow: "Managed IT for small businesses",
     heading1: "IT you don’t have",
     heading2: "to think about.",
-    sub: "Simple, fully managed IT for small businesses — backed by people who take the time to understand yours before recommending anything.",
+    sub: "Simple, fully managed IT for small businesses, backed by people who take the time to understand yours before recommending anything.",
     cta: "Let’s talk",
     ledgerLocation: "50.85°N / 4.35°E · Brussels",
     ledgerEmail: "hello@techity.io",
@@ -96,12 +91,12 @@ const en: Translations = {
       {
         title: "Collaboration platforms",
         description:
-          "Tenant setup, user management, migrations and licensing across the major collaboration suites — fully managed so your team always has the right tools, without the admin overhead.",
+          "Tenant setup, user management, migrations and licensing across the major collaboration suites, fully managed so your team always has the right tools, without the admin overhead.",
       },
       {
         title: "Modern Workplace",
         description:
-          "A complete, secure work environment for your team — on any device, from any location. We set it up, we keep it running.",
+          "A complete, secure work environment for your team, on any device, from any location. We set it up, we keep it running.",
       },
       {
         title: "Network & Infrastructure",
@@ -111,12 +106,12 @@ const en: Translations = {
       {
         title: "Immutable Backup",
         description:
-          "Tamper-proof, automated backup for your collaboration data. Set once, monitored always — your data is safe even if the worst happens.",
+          "Tamper-proof, automated backup for your collaboration data. Set once, monitored always, your data is safe even if the worst happens.",
       },
       {
         title: "Support & Monitoring",
         description:
-          "Proactive monitoring catches issues before you notice them. When something does need attention, we’re fast — remote or on-site.",
+          "Proactive monitoring catches issues before you notice them. When something does need attention, we’re fast, remote or on-site.",
       },
       {
         title: "Smart Automation",
@@ -133,20 +128,17 @@ const en: Translations = {
     pillars: [
       {
         title: "We listen before we recommend",
-        body: "We take the time to understand your business, your team, and your actual needs — before suggesting anything. No unnecessary tools, no bloated solutions, no upselling.",
+        body: "We take the time to understand your business, your team, and your actual needs, before suggesting anything. No unnecessary tools, no bloated solutions, no upselling.",
       },
       {
         title: "Truly managed, start to finish",
-        body: "From your collaboration platform to your network to your backups — everything is handled by us. One partner, one point of contact, zero IT headaches.",
+        body: "From your collaboration platform to your network to your backups, everything is handled by us. One partner, one point of contact, zero IT headaches.",
       },
       {
         title: "Quality without compromise",
         body: "We hold ourselves to enterprise standards regardless of your company size. Being small doesn’t mean settling for second-rate. Our clients feel the difference.",
       },
     ],
-  },
-  partners: {
-    label: "Our trusted partners",
   },
   contact: {
     eyebrow: "Contact",
@@ -177,14 +169,13 @@ const fr: Translations = {
     home: "Accueil",
     services: "Services",
     whyUs: "Pourquoi nous",
-    partners: "Partenaires",
     contact: "Contact",
   },
   hero: {
     eyebrow: "IT géré pour petites entreprises",
     heading1: "L’IT que vous n’avez pas",
     heading2: "à gérer.",
-    sub: "IT entièrement géré pour les petites entreprises — par des gens qui prennent le temps de comprendre votre activité avant de recommander quoi que ce soit.",
+    sub: "IT entièrement géré pour les petites entreprises, par des gens qui prennent le temps de comprendre votre activité avant de recommander quoi que ce soit.",
     cta: "Parlons-en",
     ledgerLocation: "50,85°N / 4,35°E · Bruxelles",
     ledgerEmail: "hello@techity.io",
@@ -208,12 +199,12 @@ const fr: Translations = {
       {
         title: "Plateformes collaboratives",
         description:
-          "Configuration des tenants, gestion des utilisateurs, migrations et licences sur les principales suites collaboratives — entièrement géré pour que votre équipe dispose toujours des bons outils, sans surcharge administrative.",
+          "Configuration des tenants, gestion des utilisateurs, migrations et licences sur les principales suites collaboratives, entièrement géré pour que votre équipe dispose toujours des bons outils, sans surcharge administrative.",
       },
       {
         title: "Modern Workplace",
         description:
-          "Un environnement de travail complet et sécurisé pour votre équipe — sur n’importe quel appareil, depuis n’importe où. Nous l’installons et le maintenons.",
+          "Un environnement de travail complet et sécurisé pour votre équipe, sur n’importe quel appareil, depuis n’importe où. Nous l’installons et le maintenons.",
       },
       {
         title: "Réseau & Infrastructure",
@@ -223,12 +214,12 @@ const fr: Translations = {
       {
         title: "Backup immuable",
         description:
-          "Sauvegarde automatisée et inviolable de vos données de collaboration. Configuré une fois, surveillé en permanence — vos données sont protégées même en cas d’incident.",
+          "Sauvegarde automatisée et inviolable de vos données de collaboration. Configuré une fois, surveillé en permanence, vos données sont protégées même en cas d’incident.",
       },
       {
         title: "Support & Monitoring",
         description:
-          "Un monitoring proactif détecte les problèmes avant que vous ne les remarquiez. Quand une intervention est nécessaire, nous intervenons rapidement — à distance ou sur site.",
+          "Un monitoring proactif détecte les problèmes avant que vous ne les remarquiez. Quand une intervention est nécessaire, nous intervenons rapidement, à distance ou sur site.",
       },
       {
         title: "Automatisation intelligente",
@@ -245,20 +236,17 @@ const fr: Translations = {
     pillars: [
       {
         title: "Nous écoutons avant de recommander",
-        body: "Nous prenons le temps de comprendre votre entreprise, votre équipe et vos besoins réels — avant de suggérer quoi que ce soit. Pas d’outils inutiles, pas de solutions surdimensionnées.",
+        body: "Nous prenons le temps de comprendre votre entreprise, votre équipe et vos besoins réels, avant de suggérer quoi que ce soit. Pas d’outils inutiles, pas de solutions surdimensionnées.",
       },
       {
         title: "Entièrement géré, du début à la fin",
-        body: "De votre plateforme collaborative à votre réseau en passant par vos sauvegardes — tout est géré par nous. Un seul partenaire, un seul interlocuteur, zéro casse-tête informatique.",
+        body: "De votre plateforme collaborative à votre réseau en passant par vos sauvegardes, tout est géré par nous. Un seul partenaire, un seul interlocuteur, zéro casse-tête informatique.",
       },
       {
         title: "La qualité sans compromis",
         body: "Nous appliquons des standards enterprise quelle que soit la taille de votre entreprise. Être petite ne signifie pas se contenter du moins bien. Nos clients font la différence.",
       },
     ],
-  },
-  partners: {
-    label: "Nos partenaires de confiance",
   },
   contact: {
     eyebrow: "Contact",
@@ -289,14 +277,13 @@ const nl: Translations = {
     home: "Home",
     services: "Diensten",
     whyUs: "Waarom wij",
-    partners: "Partners",
     contact: "Contact",
   },
   hero: {
     eyebrow: "Beheerde IT voor kleine bedrijven",
     heading1: "IT waar u niet aan",
     heading2: "hoeft te denken.",
-    sub: "Volledig beheerde IT voor kleine bedrijven — door mensen die de tijd nemen om uw bedrijf te begrijpen voor ze iets aanbevelen.",
+    sub: "Volledig beheerde IT voor kleine bedrijven, door mensen die de tijd nemen om uw bedrijf te begrijpen voor ze iets aanbevelen.",
     cta: "Laten we praten",
     ledgerLocation: "50,85°N / 4,35°O · Brussel",
     ledgerEmail: "hello@techity.io",
@@ -320,12 +307,12 @@ const nl: Translations = {
       {
         title: "Samenwerkingsplatformen",
         description:
-          "Tenantinrichting, gebruikersbeheer, migraties en licenties over de belangrijkste samenwerkingssuites — volledig beheerd zodat uw team altijd over de juiste tools beschikt, zonder administratieve last.",
+          "Tenantinrichting, gebruikersbeheer, migraties en licenties over de belangrijkste samenwerkingssuites, volledig beheerd zodat uw team altijd over de juiste tools beschikt, zonder administratieve last.",
       },
       {
         title: "Modern Workplace",
         description:
-          "Een complete, veilige werkomgeving voor uw team — op elk apparaat, vanaf elke locatie. Wij zetten het op en houden het draaiende.",
+          "Een complete, veilige werkomgeving voor uw team, op elk apparaat, vanaf elke locatie. Wij zetten het op en houden het draaiende.",
       },
       {
         title: "Netwerk & Infrastructuur",
@@ -335,12 +322,12 @@ const nl: Translations = {
       {
         title: "Onveranderlijke back-up",
         description:
-          "Manipulatiebestendige, geautomatiseerde back-up van uw samenwerkingsgegevens. Eenmalig ingesteld, continu bewaakt — uw data is veilig, ook bij het ergste scenario.",
+          "Manipulatiebestendige, geautomatiseerde back-up van uw samenwerkingsgegevens. Eenmalig ingesteld, continu bewaakt, uw data is veilig, ook bij het ergste scenario.",
       },
       {
         title: "Support & Monitoring",
         description:
-          "Proactieve monitoring spoort problemen op voordat u ze opmerkt. Als er toch iets nodig is, zijn we snel — op afstand of ter plaatse.",
+          "Proactieve monitoring spoort problemen op voordat u ze opmerkt. Als er toch iets nodig is, zijn we snel, op afstand of ter plaatse.",
       },
       {
         title: "Slimme automatisering",
@@ -357,20 +344,17 @@ const nl: Translations = {
     pillars: [
       {
         title: "Wij luisteren voor we adviseren",
-        body: "We nemen de tijd om uw bedrijf, uw team en uw werkelijke behoeften te begrijpen — voor we iets voorstellen. Geen onnodige tools, geen opgeblazen oplossingen, geen upselling.",
+        body: "We nemen de tijd om uw bedrijf, uw team en uw werkelijke behoeften te begrijpen, voor we iets voorstellen. Geen onnodige tools, geen opgeblazen oplossingen, geen upselling.",
       },
       {
         title: "Volledig beheerd, van start tot finish",
-        body: "Van uw samenwerkingsplatform tot uw netwerk tot uw back-ups — alles wordt door ons afgehandeld. Één partner, één aanspreekpunt, nul IT-kopzorgen.",
+        body: "Van uw samenwerkingsplatform tot uw netwerk tot uw back-ups, alles wordt door ons afgehandeld. Één partner, één aanspreekpunt, nul IT-kopzorgen.",
       },
       {
         title: "Kwaliteit zonder compromissen",
         body: "We houden ons aan enterprise-standaarden, ongeacht de grootte van uw bedrijf. Klein zijn betekent niet genoegen nemen met minder. Onze klanten voelen het verschil.",
       },
     ],
-  },
-  partners: {
-    label: "Onze vertrouwde partners",
   },
   contact: {
     eyebrow: "Contact",

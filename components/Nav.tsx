@@ -27,7 +27,6 @@ export default function Nav({
     { href: "#top", label: t.home },
     { href: "#services", label: t.services },
     { href: "#why-us", label: t.whyUs },
-    { href: "#partners", label: t.partners },
     { href: "#contact", label: t.contact },
   ];
 
