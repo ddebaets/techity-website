@@ -26,7 +26,7 @@ export default function Services({ t }: { t: Translations["services"] }) {
       <h2
         className="m-0 mt-12 max-w-[1240px] font-thin text-navy md:mt-16"
         style={{
-          fontSize: "clamp(44px, 9vw, 124px)",
+          fontSize: "clamp(36px, 6.5vw, 88px)",
           lineHeight: 0.95,
           letterSpacing: "-0.045em",
           fontWeight: 100,

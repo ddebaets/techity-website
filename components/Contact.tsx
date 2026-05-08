@@ -64,7 +64,7 @@ export default function Contact({ t }: { t: Translations["contact"] }) {
           <h2
             className="m-0 font-thin text-beige"
             style={{
-              fontSize: "clamp(56px, 11vw, 156px)",
+              fontSize: "clamp(44px, 8vw, 112px)",
               lineHeight: 0.92,
               letterSpacing: "-0.05em",
               fontWeight: 100,

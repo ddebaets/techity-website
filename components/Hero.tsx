@@ -41,7 +41,7 @@ export default function Hero({ t }: { t: Translations["hero"] }) {
         <h1
           className="m-0 max-w-[1240px] font-thin text-beige"
           style={{
-            fontSize: "clamp(56px, 11vw, 156px)",
+            fontSize: "clamp(44px, 8vw, 112px)",
             lineHeight: 0.92,
             letterSpacing: "-0.05em",
             fontWeight: 100,
