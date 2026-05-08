@@ -1,6 +1,9 @@
 import { Resend } from "resend";
 import { NextRequest, NextResponse } from "next/server";
 
+export const preferredRegion = ["fra1"];
+export const runtime = "nodejs";
+
 export async function POST(req: NextRequest) {
   const resend = new Resend(process.env.RESEND_API_KEY);
   const body = await req.json().catch(() => null);
