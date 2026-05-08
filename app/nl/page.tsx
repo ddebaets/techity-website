@@ -15,7 +15,7 @@ const t = translations.nl;
 export const metadata: Metadata = {
   title: "Techity — IT waar u niet aan hoeft te denken.",
   description:
-    "Volledig beheerde IT voor kleine bedrijven in Brussel. Microsoft 365, volledige Ubiquiti-netwerken, onveranderlijke back-up, modern workplace, automatisering — op maat van uw echte behoeften, nooit overdreven.",
+    "Volledig beheerde IT voor kleine bedrijven in Brussel. Samenwerkingsplatformen, volledige Ubiquiti-netwerken, onveranderlijke back-up, modern workplace, automatisering — op maat van uw echte behoeften, nooit overdreven.",
   alternates: {
     canonical: "/nl",
     languages: {

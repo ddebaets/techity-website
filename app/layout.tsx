@@ -17,16 +17,16 @@ export const metadata: Metadata = {
     template: "%s · Techity",
   },
   description:
-    "Fully managed IT for small businesses in Brussels — Microsoft 365, network & infrastructure, immutable backup, automation. We listen first, then right-size the solution.",
+    "Fully managed IT for small businesses in Brussels — collaboration platforms, network & infrastructure, immutable backup, automation. We listen first, then right-size the solution.",
   applicationName: "Techity",
   authors: [{ name: "Techity" }],
   generator: "Next.js",
   keywords: [
     "managed IT services Brussels",
-    "Microsoft 365 management",
+    "collaboration platforms management",
     "Ubiquiti UniFi installer",
     "small business IT support",
-    "M365 immutable backup",
+    "immutable backup for collaboration data",
     "modern workplace",
     "Brussels IT consultant",
     "Belgium MSP",
@@ -92,7 +92,7 @@ const organizationSchema = {
   url: "https://techity.io",
   logo: "https://techity.io/logo-navy.png",
   description:
-    "Fully managed IT for small businesses — Microsoft 365, networks, infrastructure, backup and automation. Brussels-based.",
+    "Fully managed IT for small businesses — collaboration platforms, networks, infrastructure, backup and automation. Brussels-based.",
   email: "hello@techity.io",
   address: {
     "@type": "PostalAddress",

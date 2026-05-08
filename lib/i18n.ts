@@ -70,7 +70,7 @@ const en: Translations = {
     eyebrow: "Managed IT for small businesses",
     heading1: "IT you don’t have",
     heading2: "to think about.",
-    sub: "Microsoft 365, Ubiquiti networks, immutable backup, automation — one partner, sized to your real needs, never oversold.",
+    sub: "Simple, fully managed IT for small businesses — backed by people who take the time to understand yours before recommending anything.",
     cta: "Let’s talk",
     ledgerLocation: "50.85°N / 4.35°E · Brussels",
     ledgerEmail: "hello@techity.io",
@@ -92,9 +92,9 @@ const en: Translations = {
     heading2: "Nothing you don’t.",
     items: [
       {
-        title: "Microsoft 365",
+        title: "Collaboration platforms",
         description:
-          "Tenant setup, user management, migrations and licensing — fully managed so your team always has the tools they need, without the admin overhead.",
+          "Tenant setup, user management, migrations and licensing across the major collaboration suites — fully managed so your team always has the right tools, without the admin overhead.",
       },
       {
         title: "Modern Workplace",
@@ -109,7 +109,7 @@ const en: Translations = {
       {
         title: "Immutable Backup",
         description:
-          "Tamper-proof, automated backup for your Microsoft 365 data. Set once, monitored always — your data is safe even if the worst happens.",
+          "Tamper-proof, automated backup for your collaboration data. Set once, monitored always — your data is safe even if the worst happens.",
       },
       {
         title: "Support & Monitoring",
@@ -135,7 +135,7 @@ const en: Translations = {
       },
       {
         title: "Truly managed, start to finish",
-        body: "From your Microsoft 365 tenant to your network to your backups — everything is handled by us. One partner, one point of contact, zero IT headaches.",
+        body: "From your collaboration platform to your network to your backups — everything is handled by us. One partner, one point of contact, zero IT headaches.",
       },
       {
         title: "Quality without compromise",
@@ -181,7 +181,7 @@ const fr: Translations = {
     eyebrow: "IT géré pour petites entreprises",
     heading1: "L’IT que vous n’avez pas",
     heading2: "à gérer.",
-    sub: "Microsoft 365, réseaux Ubiquiti, backup immuable, automatisation — un seul partenaire, adapté à vos vrais besoins, jamais sur-vendu.",
+    sub: "IT entièrement géré pour les petites entreprises — par des gens qui prennent le temps de comprendre votre activité avant de recommander quoi que ce soit.",
     cta: "Parlons-en",
     ledgerLocation: "50,85°N / 4,35°E · Bruxelles",
     ledgerEmail: "hello@techity.io",
@@ -203,9 +203,9 @@ const fr: Translations = {
     heading2: "Rien de superflu.",
     items: [
       {
-        title: "Microsoft 365",
+        title: "Plateformes collaboratives",
         description:
-          "Configuration du tenant, gestion des utilisateurs, migrations et licences — entièrement géré pour que votre équipe dispose toujours des bons outils, sans surcharge administrative.",
+          "Configuration des tenants, gestion des utilisateurs, migrations et licences sur les principales suites collaboratives — entièrement géré pour que votre équipe dispose toujours des bons outils, sans surcharge administrative.",
       },
       {
         title: "Modern Workplace",
@@ -220,7 +220,7 @@ const fr: Translations = {
       {
         title: "Backup immuable",
         description:
-          "Sauvegarde automatisée et inviolable de vos données Microsoft 365. Configuré une fois, surveillé en permanence — vos données sont protégées même en cas d’incident.",
+          "Sauvegarde automatisée et inviolable de vos données de collaboration. Configuré une fois, surveillé en permanence — vos données sont protégées même en cas d’incident.",
       },
       {
         title: "Support & Monitoring",
@@ -246,7 +246,7 @@ const fr: Translations = {
       },
       {
         title: "Entièrement géré, du début à la fin",
-        body: "De votre tenant Microsoft 365 à votre réseau en passant par vos sauvegardes — tout est géré par nous. Un seul partenaire, un seul interlocuteur, zéro casse-tête informatique.",
+        body: "De votre plateforme collaborative à votre réseau en passant par vos sauvegardes — tout est géré par nous. Un seul partenaire, un seul interlocuteur, zéro casse-tête informatique.",
       },
       {
         title: "La qualité sans compromis",
@@ -292,7 +292,7 @@ const nl: Translations = {
     eyebrow: "Beheerde IT voor kleine bedrijven",
     heading1: "IT waar u niet aan",
     heading2: "hoeft te denken.",
-    sub: "Microsoft 365, Ubiquiti-netwerken, onveranderlijke back-up, automatisering — één partner, op maat van uw echte behoeften, nooit overdreven.",
+    sub: "Volledig beheerde IT voor kleine bedrijven — door mensen die de tijd nemen om uw bedrijf te begrijpen voor ze iets aanbevelen.",
     cta: "Laten we praten",
     ledgerLocation: "50,85°N / 4,35°O · Brussel",
     ledgerEmail: "hello@techity.io",
@@ -314,9 +314,9 @@ const nl: Translations = {
     heading2: "Niets meer dan dat.",
     items: [
       {
-        title: "Microsoft 365",
+        title: "Samenwerkingsplatformen",
         description:
-          "Tenantinrichting, gebruikersbeheer, migraties en licenties — volledig beheerd zodat uw team altijd over de juiste tools beschikt, zonder administratieve last.",
+          "Tenantinrichting, gebruikersbeheer, migraties en licenties over de belangrijkste samenwerkingssuites — volledig beheerd zodat uw team altijd over de juiste tools beschikt, zonder administratieve last.",
       },
       {
         title: "Modern Workplace",
@@ -331,7 +331,7 @@ const nl: Translations = {
       {
         title: "Onveranderlijke back-up",
         description:
-          "Manipulatiebestendige, geautomatiseerde back-up van uw Microsoft 365-gegevens. Eenmalig ingesteld, continu bewaakt — uw data is veilig, ook bij het ergste scenario.",
+          "Manipulatiebestendige, geautomatiseerde back-up van uw samenwerkingsgegevens. Eenmalig ingesteld, continu bewaakt — uw data is veilig, ook bij het ergste scenario.",
       },
       {
         title: "Support & Monitoring",
@@ -357,7 +357,7 @@ const nl: Translations = {
       },
       {
         title: "Volledig beheerd, van start tot finish",
-        body: "Van uw Microsoft 365-tenant tot uw netwerk tot uw back-ups — alles wordt door ons afgehandeld. Één partner, één aanspreekpunt, nul IT-kopzorgen.",
+        body: "Van uw samenwerkingsplatform tot uw netwerk tot uw back-ups — alles wordt door ons afgehandeld. Één partner, één aanspreekpunt, nul IT-kopzorgen.",
       },
       {
         title: "Kwaliteit zonder compromissen",

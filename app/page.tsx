@@ -14,7 +14,7 @@ const t = translations.en;
 export const metadata: Metadata = {
   title: "Techity — IT you don't have to think about.",
   description:
-    "Brussels-based managed IT for small businesses. Microsoft 365, full Ubiquiti networks, immutable backup, modern workplace, automation — sized to your real needs, never oversold.",
+    "Brussels-based managed IT for small businesses. Collaboration platforms, full Ubiquiti networks, immutable backup, modern workplace, automation — sized to your real needs, never oversold.",
   alternates: {
     canonical: "/",
     languages: {

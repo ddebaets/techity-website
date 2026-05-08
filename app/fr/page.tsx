@@ -15,7 +15,7 @@ const t = translations.fr;
 export const metadata: Metadata = {
   title: "Techity — L'IT que vous n'avez pas à gérer.",
   description:
-    "IT entièrement géré pour les petites entreprises à Bruxelles. Microsoft 365, réseaux Ubiquiti complets, backup immuable, modern workplace, automatisation — adapté à vos vrais besoins, jamais sur-vendu.",
+    "IT entièrement géré pour les petites entreprises à Bruxelles. Plateformes collaboratives, réseaux Ubiquiti complets, backup immuable, modern workplace, automatisation — adapté à vos vrais besoins, jamais sur-vendu.",
   alternates: {
     canonical: "/fr",
     languages: {
